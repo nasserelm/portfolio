@@ -1,12 +1,14 @@
 import React from "react";
 import styled from "styled-components/macro";
-import myImg from '../img/newyorkss.jpeg';
+import myImg from '../img/newyorks.jpeg';
 
 const ImageContainer = styled.div`
   overflow: hidden;
   background-image: url(${myImg});
   background-size: cover;
-  background-position: 40% 110%;
+  background-position: 0% 80%;
+  background-repeat: no-repeat;
+  filter: brightness(170%); 
   @media (max-width: 800px) {
     display:none;
   }

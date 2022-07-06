@@ -134,10 +134,10 @@ function NavBar() {
     <NavBarItems>
       <Container>
         <Logo>
-          Nasser Mughrabi <i className="fab fa-react"></i>
+          Nasser Mughrabi
         </Logo>
         <MenuIcon onClick={handleClick}>
-          <i className="fas fa-bars"></i>
+          <i class="fas fa-bars"></i>
         </MenuIcon>
       </Container>
       <LinksList activado={display}>{links}</LinksList>

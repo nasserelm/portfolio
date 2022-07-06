@@ -1,10 +1,10 @@
 import React from "react";
 import styled from "styled-components/macro";
 import Carousel from "react-elastic-carousel";
-import cryptosImg from '../img/cryptos.png';
-import flipImg from '../img/flip.png';
-import socialImg from '../img/social.png';
-import mobileCryptosImg from '../img/mobile-cryptos1.png';
+import cryptosImg from '../img/both-cryptos.png';
+import flipImg from '../img/both-flip.png';
+import socialImg from '../img/both-social.png';
+import mobileCryptosImg from '../img/mobile-cryptos.png';
 import mobileFlipImg from '../img/mobile-flip.png';
 import mobileSocialImg from '../img/mobile-social.png';
 
@@ -70,15 +70,19 @@ const PageWrapper = styled.div`
   @media (max-width: 800px) {
   #cryptos{
     background-image:url(${mobileCryptosImg});
+    background-size: cover;
   }
   #flip{
     background-image:url(${mobileFlipImg});
+    background-size: cover;
   }
   #social{
     background-image:url(${mobileSocialImg});
+    background-size: cover;
   }
   #social{
     background-image:url(${mobileSocialImg});
+    background-size: cover;
   }
   }
 `;
@@ -87,7 +91,7 @@ function Projects() {
   return (
     <PageWrapper id="projects">
       <Carousel breakPoints={breakPoints}>
-        <a href="https://cryptos-proj.netlify.app/" target="_blank" rel="noopener noreferrer">
+        <a data-hover="Hello, this is the tooltip" href="https://cryptos-proj.netlify.app/" target="_blank" rel="noopener noreferrer">
           <Item id="cryptos"></Item>
         </a>
         <a href="https://flip-mem-game.netlify.app/" target="_blank" rel="noopener noreferrer">
