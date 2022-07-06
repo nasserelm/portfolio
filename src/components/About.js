@@ -63,7 +63,7 @@ const PageWrapper = styled.div`
       display: flex;
       align-items: center;
       justify-content: center;
-      background-image: linear-gradient(to bottom, rgba(0,0, 0, .3), rgba(0,0, 0, .3)), url(${process.env.PUBLIC_URL + "myself.jpg"});
+      background-image: linear-gradient(to bottom, rgba(0,0, 0, .3), rgba(0,0, 0, .3)), url(${myImg});
       background-size: cover;
       background-position: 40% 10%;
       text-shadow: 1px 1px black;
@@ -76,11 +76,11 @@ function About() {
       <ImageContainer></ImageContainer>
       <Description>
         <h2><ResumeContainer title="My Resume" href={process.env.PUBLIC_URL + "Resume.pdf"} target="_blank">Nasser Mughrabi</ResumeContainer></h2>
-        <h4>I am an international student at the University of Utah in Salt Lake City, Utah. I am  
+        <h4>I am an international student completing my junior year at the University of Utah in Salt Lake City where I am pursuing a bachelor's degree in computer science.
           <br></br>
-          Moreover, working on personal projects helped me put these concepts into practice allowing me to showcase 
-          my skills. This allowed me to land a position at the Learning and Teaching Center as a software developer where I am currently working with a team of developers to design, develop, 
-          update, and maintain applications for UOU. 
+          Working on personal projects helped me put computer science concepts and software tools into practice allowing me to showcase my skills.
+           <br></br>
+          I am learner, driven, and communicator  
         </h4>
       </Description>
     </PageWrapper>
