@@ -76,8 +76,7 @@ function About() {
       <ImageContainer></ImageContainer>
       <Description>
         <h2><ResumeContainer title="My Resume" href={process.env.PUBLIC_URL + "Resume.pdf"} target="_blank">Nasser Mughrabi</ResumeContainer></h2>
-        <h4>I am an international student passionate about programming and solving problems in creative ways. At the University of Utah where I am completing my junior 
-          year in Computer Science, I have learned to develop RESTful applications. 
+        <h4>I am an international student at the University of Utah in Salt Lake City, Utah. I am  
           <br></br>
           Moreover, working on personal projects helped me put these concepts into practice allowing me to showcase 
           my skills. This allowed me to land a position at the Learning and Teaching Center as a software developer where I am currently working with a team of developers to design, develop, 

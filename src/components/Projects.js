@@ -67,22 +67,18 @@ const PageWrapper = styled.div`
   #social{
     background-image:url(${socialImg});
   }
-  @media (max-width: 800px) {
+  @media (max-width: 760px) {
   #cryptos{
     background-image:url(${mobileCryptosImg});
-    background-size: cover;
   }
   #flip{
     background-image:url(${mobileFlipImg});
-    background-size: cover;
   }
   #social{
     background-image:url(${mobileSocialImg});
-    background-size: cover;
   }
   #social{
     background-image:url(${mobileSocialImg});
-    background-size: cover;
   }
   }
 `;
@@ -91,7 +87,7 @@ function Projects() {
   return (
     <PageWrapper id="projects">
       <Carousel breakPoints={breakPoints}>
-        <a data-hover="Hello, this is the tooltip" href="https://cryptos-proj.netlify.app/" target="_blank" rel="noopener noreferrer">
+        <a href="https://cryptos-proj.netlify.app/" target="_blank" rel="noopener noreferrer">
           <Item id="cryptos"></Item>
         </a>
         <a href="https://flip-mem-game.netlify.app/" target="_blank" rel="noopener noreferrer">
