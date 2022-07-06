@@ -6,10 +6,10 @@ const ImageContainer = styled.div`
   overflow: hidden;
   background-image: url(${myImg});
   background-size: cover;
-  background-position: 0% 80%;
+  background-position: 60% 40%;
   background-repeat: no-repeat;
   filter: brightness(170%); 
-  @media (max-width: 800px) {
+  @media (max-width: 760px) {
     display:none;
   }
 `
