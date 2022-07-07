@@ -67,6 +67,7 @@ const PageWrapper = styled.div`
       background-size: cover;
       background-position: 40% 10%;
       text-shadow: 1px 1px black;
+      padding-top: 40%;
     }
   `;
 
