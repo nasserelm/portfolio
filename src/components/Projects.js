@@ -57,6 +57,10 @@ const PageWrapper = styled.div`
   }
   #cryptos{
     background-image:url(${cryptosImg});
+    :hover{
+      text-decoration: none;
+      cursor:pointer;
+    }
   }
   #flip{
     background-image:url(${flipImg});
@@ -85,18 +89,18 @@ const PageWrapper = styled.div`
 
 function Projects() {
   return (
-    <PageWrapper id="projects">
+    <PageWrapper  id="projects">
       <Carousel breakPoints={breakPoints}>
-        <a href="https://cryptos-proj.netlify.app/" target="_blank" rel="noopener noreferrer">
+        <a title="React Project" href="https://cryptos-proj.netlify.app/" target="_blank" rel="noopener noreferrer">
           <Item id="cryptos"></Item>
         </a>
-        <a href="https://flip-mem-game.netlify.app/" target="_blank" rel="noopener noreferrer">
+        <a title="Javascript Project" href="https://flip-mem-game.netlify.app/" target="_blank" rel="noopener noreferrer">
           <Item id="flip"></Item>
         </a>
-        <a href="https://socialme-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+        <a title="Django Project" href="https://socialme-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
           <Item id="social"></Item>
         </a>
-        <a href="https://socialme-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+        <a title="Machine Learning Project" href="https://socialme-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
           <Item id="social"></Item>
         </a>
       </Carousel>

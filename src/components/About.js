@@ -14,22 +14,6 @@ const ImageContainer = styled.div`
   }
 `
 
-const ResumeContainer = styled.a`
-  padding: 1rem 0rem;
-  font-family: 'Playfair Display', serif;
-  font-size: 3rem;
-  color: white;
-  text-decoration: none;
-  @media (min-width: 800px){
-    font-size: 7vmin;
-    :hover{
-      text-decoration: none;
-      color: #d91b6a;
-      cursor:pointer;
-    }
-  }
-`;
-
 const Description = styled.div`
   color: white;
   padding: 5% 10% ;
@@ -76,12 +60,11 @@ function About() {
     <PageWrapper id="about">
       <ImageContainer></ImageContainer>
       <Description>
-        <h2><ResumeContainer title="My Resume" href={process.env.PUBLIC_URL + "Resume.pdf"} target="_blank">Nasser Mughrabi</ResumeContainer></h2>
-        <h4>I am an international student completing my junior year at the University of Utah where I am pursuing my bachelor's degree in computer science. I am passionate about finding soultions for our modern day to day problems using the most effecient algorithms and data structures.
+        <h2>Nasser Mughrabi</h2>
+        <h4>I am an international student completing my junior year at the University of Utah pursuing a bachelor's degree in computer science. I am passionate about solving problems and finding solutions for modern day-to-day issues using the most effecient algorithms and data structures accessable.
           <br></br>
-          Working on personal and team projects helped me put computer science concepts and problem solving techniques into practice allowing me to showcase my skills.
+          Working on team and personal projects helped put computer science concepts, problem solving techniques, and team work skills into practice allowing my skills to be showcased.
            <br></br>
-          I am quick learner, great communicator, and team player 
         </h4>
       </Description>
     </PageWrapper>

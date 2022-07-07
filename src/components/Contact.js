@@ -15,13 +15,8 @@ function validateText(inputText){
 }
 
 function sendEmail(name, message){
-  //Create link element and link it to the file's url
-  const link = document.createElement("a");
-  link.href = `mailto:nasser.mughrabi@gmail.com?subject=Contact email from ${name}&body=${message}`;
-  link.setAttribute("download", "PAFs.zip");
-  document.body.appendChild(link);
-  //Click and download file
-  link.click();
+  // open email client app or redirect to email browser
+  window.open(`mailto:mughrabi.nasser@gmail.com?subject=Portfolio Email from ${name}&body=${message}`);
 }
 
 const Heading = styled.div`
@@ -61,6 +56,7 @@ const FormContainer = styled.form`
     }
   }
   textarea {
+    resize: none;
     background-color: #1e242c;
     height: 30vh;
     line-height: 1.75rem;
@@ -173,7 +169,7 @@ function Contact() {
       </Heading>
       <FormContainer>
         <input id='Name' name="Name" type="Text" placeholder="Name" />
-        <textarea id='Message'name="Message" placeholder="Leave a message please" rows="20" cols="4"></textarea>
+        <textarea id='Message'name="Message" placeholder="Leave me a message" rows="20" cols="4"></textarea>
         <button type='button' onClick={handleClick}>Submit</button>
       </FormContainer>
       <IconContainer>
