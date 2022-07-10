@@ -78,10 +78,11 @@ function About() {
       <ImageContainer></ImageContainer>
       <Description>
         <h2><ResumeContainer title="My Resume" href={process.env.PUBLIC_URL + "Resume.pdf"} target="_blank">Nasser Mughrabi</ResumeContainer></h2>
-        <h4>I am an international student completing my junior year at the University of Utah pursuing a bachelor's degree in computer science. I am passionate about solving problems and finding solutions for modern day-to-day issues using the most effecient algorithms and data structures accessable.
+        <h4>Current international computer science student and part-time teaching assistant at the University of Utah with fundamental knowledge of software design, development, and testing. Seeking to utilize excellent programming and problem-solving skills to thrive as an Intern Software Engineer.
           <br></br>
-          Working on team and personal projects helped put computer science concepts, problem solving techniques, and team work skills into practice allowing my skills to be showcased.
+          Working on team and personal projects helped put computer science concepts, problem-solving techniques, and teamwork skills into practice.
            <br></br>
+          Reliable, energetic, and resourceful programming professional. Expertise in client services, relationship-building, and communication.
         </h4>
       </Description>
     </PageWrapper>
