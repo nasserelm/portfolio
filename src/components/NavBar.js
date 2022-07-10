@@ -5,7 +5,8 @@ import { Link } from "react-scroll";
 
 // --------------------------------------------------- Start Here -------------------------------------------
 const NavBarItems = styled.nav`
-  background-image: linear-gradient(335deg,#003e61,#1e2f59 70%,#ffc700);
+  // background-image: linear-gradient(335deg,#003e61,#1e2f59 70%,#ffc700);
+  background-color: #072737;
   font-family: "Raleway", sans-serif;
   color: white;
   width: 100%;

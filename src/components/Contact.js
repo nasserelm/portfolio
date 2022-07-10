@@ -44,7 +44,8 @@ const FormContainer = styled.form`
   width: 75vw;
   caret-color: white;
   input {
-    background-image: linear-gradient(335deg,#003e61,#1e2f59 100%,#ffc700);
+    // background-image: linear-gradient(335deg,#003e61,#1e2f59 100%,#ffc700);
+    background-color: #072737;
     line-height: 1.75rem;
     font-size: 1rem;
     padding: 0px 0.5rem;
@@ -57,7 +58,8 @@ const FormContainer = styled.form`
   }
   textarea {
     resize: none;
-    background-image: linear-gradient(335deg,#003e61,#1e2f59 100%,#ffc700);
+    // background-image: linear-gradient(335deg,#003e61,#1e2f59 100%,#ffc700);
+    background-color: #072737;
     height: 30vh;
     line-height: 1.75rem;
     font-size: 1rem;
@@ -70,7 +72,8 @@ const FormContainer = styled.form`
     }
   }
   button {
-    background-image: linear-gradient(335deg,#003e61,#1e2f59 100%,#ffc700);
+    // background-image: linear-gradient(335deg,#003e61,#1e2f59 100%,#ffc700);
+    background-color: #072737;
     font-weight: 700;
     margin-top: 0.5rem;
     height: 3rem;
@@ -95,7 +98,8 @@ const IconContainer = styled.ul`
   padding-top:2.5vh;
   margin-top: 5vh;
   width: 100vw;
-  background-color: #003e61;
+  // background-color: #003e61;
+  background-color: #072737;
   display:flex;
   color: white;
   align-items: center;
@@ -126,7 +130,8 @@ const IconContainer = styled.ul`
 `
 
 const Copyright = styled.div`
-  background-color: #003e61;
+  // background-color: #003e61;
+  background-color: #072737;
   width: 100vw;
   display: flex;
   justify-content: center;
@@ -138,7 +143,8 @@ const PageWrapper = styled.div`
     height: calc(100vh - 3.65rem);
     min-height: calc(100vh - 3.65rem);
     height: auto;
-    background-image: linear-gradient(335deg,#003e61,#1e2f59 100%,#ffc700);
+    // background-image: linear-gradient(335deg,#003e61,#1e2f59 100%,#ffc700);
+    background-color: #062e42;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -39,7 +39,8 @@ const Description = styled.div`
 const PageWrapper = styled.div`
     height: calc(100vh - 3.65rem);
     overflow: hidden;
-    background-image: linear-gradient(335deg,#003e61,#1e2f59 90%,#ffc700);
+    // background-image: linear-gradient(335deg,#003e61,#1e2f59 90%,#ffc700);
+    background-color: #072737;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
