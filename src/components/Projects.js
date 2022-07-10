@@ -39,7 +39,7 @@ const Item = styled.div`
 const PageWrapper = styled.div`
   height: calc(100vh - 3.65rem);
   min-height: calc(100vh - 3.65rem);
-  background-color: #1e242c;
+  background-image: linear-gradient(335deg,#003e61,#1e2f59 100%,#ffc700);
   display: flex;
   align-items: center;
   justify-content: center;
