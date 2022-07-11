@@ -98,12 +98,12 @@ function Projects() {
         <a title="Javascript Project" href="https://flip-mem-game.netlify.app/" target="_blank" rel="noopener noreferrer">
           <Item id="flip"></Item>
         </a>
-        <a title="Django Project" href="https://socialme-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+        <a title="Django-React Project" href="https://socialme-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
           <Item id="social"></Item>
         </a>
-        <a title="Machine Learning Project" href="https://socialme-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+        {/* <a title="Machine Learning Project" href="https://socialme-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
           <Item id="social"></Item>
-        </a>
+        </a> */}
       </Carousel>
     </PageWrapper>
   );
