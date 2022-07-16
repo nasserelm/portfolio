@@ -179,7 +179,7 @@ function Contact() {
         <button type='button' onClick={handleClick}>Submit</button>
       </FormContainer>
       <IconContainer>
-        <a href="https://twitter.com/NasserMughrabi/" target="_blank" rel="noopener noreferrer"><FaTwitterSquare /></a>
+        <a href="https://twitter.com/MughrabiNasser/" target="_blank" rel="noopener noreferrer"><FaTwitterSquare /></a>
         <a href="https://www.instagram.com/nasser_mughrabi/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
         <a href="https://www.linkedin.com/in/nasser258/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
         <a href="https://github.com/NasserMughrabi/" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
