@@ -4,9 +4,11 @@ import Carousel from "react-elastic-carousel";
 import cryptosImg from '../img/both-cryptos.png';
 import flipImg from '../img/both-flip.png';
 import socialImg from '../img/both-social.png';
+import sortingImg from '../img/both-sorting.png';
 import mobileCryptosImg from '../img/mobile-cryptos.png';
 import mobileFlipImg from '../img/mobile-flip.png';
 import mobileSocialImg from '../img/mobile-social.png';
+import mobileSortingImg from '../img/mobile-sorting.png';
 
 const breakPoints = [
   {width: 1, itemsToShow: 1},
@@ -69,8 +71,8 @@ const PageWrapper = styled.div`
   #social{
     background-image:url(${socialImg});
   }
-  #social{
-    background-image:url(${socialImg});
+  #sorting{
+    background-image:url(${sortingImg});
   }
   @media (max-width: 760px) {
   #cryptos{
@@ -82,8 +84,8 @@ const PageWrapper = styled.div`
   #social{
     background-image:url(${mobileSocialImg});
   }
-  #social{
-    background-image:url(${mobileSocialImg});
+  #sorting{
+    background-image:url(${mobileSortingImg});
   }
   }
 `;
@@ -92,18 +94,18 @@ function Projects() {
   return (
     <PageWrapper  id="projects">
       <Carousel breakPoints={breakPoints}>
+        <a title="React Project" href="https://sortingalgos-app.netlify.app/" target="_blank" rel="noopener noreferrer">
+          <Item id="sorting"></Item>
+        </a>
         <a title="React Project" href="https://cryptos-proj.netlify.app/" target="_blank" rel="noopener noreferrer">
           <Item id="cryptos"></Item>
-        </a>
-        <a title="Javascript Project" href="https://flip-mem-game.netlify.app/" target="_blank" rel="noopener noreferrer">
-          <Item id="flip"></Item>
         </a>
         <a title="Django-React Project" href="https://socialme-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
           <Item id="social"></Item>
         </a>
-        {/* <a title="Machine Learning Project" href="https://socialme-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
-          <Item id="social"></Item>
-        </a> */}
+        <a title="Javascript Project" href="https://flip-mem-game.netlify.app/" target="_blank" rel="noopener noreferrer">
+          <Item id="flip"></Item>
+        </a>
       </Carousel>
     </PageWrapper>
   );
