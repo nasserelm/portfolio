@@ -81,8 +81,6 @@ function About() {
         <h4>Current international computer science student and part-time teaching assistant at the University of Utah with fundamental knowledge of software design, development, and testing. Passionate about programming and solving problems using the most efficient algorithms and data structures accessible. 
           <br></br>
           Working on team and personal projects helped put computer science concepts, problem-solving techniques, and teamwork skills into practice. Seeking to utilize these excellent programming and problem-solving skills to thrive as an Intern Software Engineer.
-           <br></br>
-          Reliable, energetic, and resourceful programming professional. Expertise in client services, relationship-building, and communication.
         </h4>
       </Description>
     </PageWrapper>
