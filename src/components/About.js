@@ -77,7 +77,7 @@ function About() {
     <PageWrapper id="about">
       <ImageContainer></ImageContainer>
       <Description>
-        <h2><ResumeContainer title="My Resume" href={process.env.PUBLIC_URL + "MyResume.pdf"} target="_blank">Nasser Mughrabi</ResumeContainer></h2>
+        <h2><ResumeContainer title="My Resume" href={process.env.PUBLIC_URL + "NasserResume.pdf"} target="_blank">Nasser Mughrabi</ResumeContainer></h2>
         <h4>Current international computer science student and part-time teaching assistant at the University of Utah with fundamental knowledge of software design, development, and testing. Passionate about programming and solving problems using the most efficient algorithms and data structures accessible. 
           <br></br>
           Working on team and personal projects helped put computer science concepts, problem-solving techniques, and teamwork skills into practice. Seeking to utilize these excellent programming and problem-solving skills to thrive as an Intern Software Engineer.
