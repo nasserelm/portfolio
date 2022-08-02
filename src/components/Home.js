@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 import background from '../img/background2.png';
-// import Particles from "react-particles-js";
+import Particles from "react-particles-js";
 
 const PageWrapper = styled.div`
     height: calc(100vh - 3.65rem);
@@ -47,7 +47,7 @@ function Home() {
   return (
     <PageWrapper id="home">
       {/* Sets particles in the background */}
-      {/* <Particles
+      <Particles
         params={{
           particles: {
             number: {
@@ -88,7 +88,7 @@ function Home() {
             },
           },
         }}
-      /> */}
+      />
       <h1>
         Hello, I'm <span>Nasser Mughrabi.</span>
         <br />
