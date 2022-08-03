@@ -97,14 +97,14 @@ function Projects() {
         <a title="React Project" href="https://sortingalgos-app.netlify.app/" target="_blank" rel="noopener noreferrer">
           <Item id="sorting"></Item>
         </a>
-        <a title="React Project" href="https://cryptos-proj.netlify.app/" target="_blank" rel="noopener noreferrer">
-          <Item id="cryptos"></Item>
-        </a>
         <a title="Django-React Project" href="https://socialme-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
           <Item id="social"></Item>
         </a>
         <a title="Javascript Project" href="https://flip-mem-game.netlify.app/" target="_blank" rel="noopener noreferrer">
           <Item id="flip"></Item>
+        </a>
+        <a title="React Project" href="https://cryptos-proj.netlify.app/" target="_blank" rel="noopener noreferrer">
+          <Item id="cryptos"></Item>
         </a>
       </Carousel>
     </PageWrapper>
