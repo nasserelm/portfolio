@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import {FaLinkedin, FaInstagram, FaTwitterSquare, FaCopyright, FaGithub} from "react-icons/fa";
+import {FaLinkedin, FaInstagram, FaTwitterSquare, FaGithub} from "react-icons/fa";
 
 function validateText(inputText){
   // Checking for letters and at least 3 characters
@@ -133,8 +133,9 @@ const Copyright = styled.div`
   // background-color: #003e61;
   background-color: #072737;
   width: 100vw;
-  display: flex;
+  display: block;
   justify-content: center;
+  text-align: center;
   color: white;
   padding-bottom: 1rem;
 `
@@ -184,7 +185,7 @@ function Contact() {
         <a href="https://www.linkedin.com/in/nasser258/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
         <a href="https://github.com/NasserMughrabi/" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
       </IconContainer>
-      <Copyright>Nasser Mughrabi&nbsp;<FaCopyright/>&nbsp;2022</Copyright>
+      <Copyright>Nasser Mughrabi <i class="fa fa-copyright"></i> 2022</Copyright>
     </PageWrapper>
   );
 }
