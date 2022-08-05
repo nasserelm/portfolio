@@ -126,6 +126,9 @@ function Home() {
           },
           detectRetina: true,
         }}
+        style={{
+          position: "relative",
+        }}
       />
       {/* <Particles
         params={{
