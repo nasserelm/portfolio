@@ -62,6 +62,7 @@ function Home() {
         options={{
           fpsLimit: 120,
           interactivity: {
+            detectsOn: "canvas",
             events: {
               onClick: {
                 enable: true,
@@ -76,10 +77,6 @@ function Home() {
             modes: {
               push: {
                 quantity: 4,
-              },
-              repulse: {
-                distance: 200,
-                duration: 0.4,
               },
               bubble: {
                 distance: 400,
@@ -99,9 +96,6 @@ function Home() {
               enable: true,
               opacity: 0.5,
               width: 1,
-            },
-            collisions: {
-              enable: true,
             },
             move: {
               direction: "none",
