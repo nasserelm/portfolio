@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import myImg from '../img/background.jpg';
+import myImg from '../img/me2.jpeg';
 
 const ResumeContainer = styled.a`
   padding: 1rem 0rem;
@@ -24,7 +24,7 @@ const ImageContainer = styled.div`
   background-size: cover;
   background-position: 60% 40%;
   background-repeat: no-repeat;
-  filter: brightness(170%); 
+  // filter: brightness(170%); 
   @media (max-width: 760px) {
     display:none;
   }
