@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import myImg from '../img/me2.jpeg';
+import myImg from '../img/newyork1.jpeg';
 
 const ResumeContainer = styled.a`
   padding: 1rem 0rem;
@@ -12,7 +12,7 @@ const ResumeContainer = styled.a`
     font-size: 7vmin;
     :hover{
       text-decoration: none;
-      color: #326fa8;
+      color: #ffc700;
       cursor:pointer;
     }
   }

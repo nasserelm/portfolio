@@ -39,27 +39,7 @@ const PageWrapper = styled.div`
       text-shadow: 2px 2px 4px black;
       pointer-events: none;
       span {
-        color: #326fa8;
-      }
-      button {
-        color: white;
-        background-color: #326fa8;
-        width: 9.7rem;
-        font-weight: bold;
-        font-size: 18.5px;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        /* default */
-        display: inline-block;
-        white-space: nowrap;
-        vertical-align: middle;
-        user-select: none;
-        border: 1px solid transparent;
-        padding: 0.375rem 0.75rem;
-        line-height: 1.5;
-        border-radius: 0.25rem;
-        transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        color: #ffc700;
       }
     }
   `;
