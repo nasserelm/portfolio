@@ -75,7 +75,6 @@ function Home() {
   };
   return (
     <PageWrapper id="home">
-      {/* <Particles id="tsparticles" url="http://foo.bar/particles.json" init={particlesInit} loaded={particlesLoaded} /> */}
       {/* Sets particles in the background */}
       <Particles
       canvasClassName="tsparticles-canvas-el"
@@ -85,7 +84,6 @@ function Home() {
         options={{
           fpsLimit: 120,
           interactivity: {
-            // detectsOn: "canvas",
             events: {
               onClick: {
                 enable: true,
@@ -95,7 +93,6 @@ function Home() {
                 enable: true,
                 mode: "grab",
               },
-              // resize: true,
             },
             modes: {
               push: {
@@ -147,60 +144,15 @@ function Home() {
               value: { min: 1, max: 5 },
             },
           },
-          // detectRetina: true,
         }}
         style={{
           position: "relative",
         }}
       />
-      {/* <Particles
-        params={{
-          particles: {
-            number: {
-              value: 100,
-              density: {
-                enable: true,
-                value_area: 400,
-              },
-            },
-          },
-          interactivity: {
-            detectsOn: "canvas",
-            events: {
-              onClick: {
-                enable: true,
-                mode: "push",
-              },
-              onHover: {
-                enable: true,
-                mode: "grab",
-              },
-              resize: true,
-            },
-            modes: {
-              bubble: {
-                distance: 400,
-                duration: 2,
-                opacity: 1,
-                size: 40,
-              },
-              push: {
-                quantity: 4,
-              },
-              grab: {
-                distance: 200,
-                duration: 1,
-              },
-            },
-          },
-        }}
-      /> */}
       <h1>
         Hello, I'm <span>Nasser Mughrabi.</span>
         <br />
         I'm a full-stack software developer.
-        <br />
-        <button className='btn'>Email Me</button>
       </h1>
     </PageWrapper>
   );
