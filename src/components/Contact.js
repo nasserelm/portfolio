@@ -88,8 +88,8 @@ const FormContainer = styled.form`
   @media(hover: hover){
     button:hover {
       transition: 0.5s;
-      color: #ffc700;
-      border-color: #ffc700;
+      color: #326fa8;
+      border-color: #326fa8;
     }
   }
 `
@@ -120,7 +120,7 @@ const IconContainer = styled.ul`
   }
   @media(hover: hover){
     svg:hover {
-      color: #ffc700;
+      color: #326fa8;
       /* transform: scale(1.50); */
     }
     a:hover {

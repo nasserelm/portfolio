@@ -12,7 +12,7 @@ const ResumeContainer = styled.a`
     font-size: 7vmin;
     :hover{
       text-decoration: none;
-      color: #ffc700;
+      color: #326fa8;
       cursor:pointer;
     }
   }
