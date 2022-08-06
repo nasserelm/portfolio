@@ -50,19 +50,22 @@ function Home() {
   };
 
   const particlesLoaded = (container) => {
-    console.log(container);
+    console.log(container.canvas.element.style["position"]);
+    container.canvas.element.style["position"] = "relative";
   };
   return (
     <PageWrapper id="home">
+      {/* <Particles id="tsparticles" url="http://foo.bar/particles.json" init={particlesInit} loaded={particlesLoaded} /> */}
       {/* Sets particles in the background */}
       <Particles
+      canvasClassName="tsparticles-canvas-el"
         id="tsparticles"
         init={particlesInit}
         loaded={particlesLoaded}
         options={{
           fpsLimit: 120,
           interactivity: {
-            detectsOn: "canvas",
+            // detectsOn: "canvas",
             events: {
               onClick: {
                 enable: true,
@@ -72,7 +75,7 @@ function Home() {
                 enable: true,
                 mode: "grab",
               },
-              resize: true,
+              // resize: true,
             },
             modes: {
               push: {
@@ -124,7 +127,7 @@ function Home() {
               value: { min: 1, max: 5 },
             },
           },
-          detectRetina: true,
+          // detectRetina: true,
         }}
         style={{
           position: "relative",
