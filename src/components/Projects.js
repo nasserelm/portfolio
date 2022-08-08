@@ -4,10 +4,12 @@ import Carousel from "react-elastic-carousel";
 import cryptosImg from '../img/both-cryptos.png';
 import flipImg from '../img/both-flip.png';
 import socialImg from '../img/both-social.png';
+import hustleImg from '../img/both-hustle.png';
 import sortingImg from '../img/both-sorting.png';
 import mobileCryptosImg from '../img/mobile-cryptos.png';
 import mobileFlipImg from '../img/mobile-flip.png';
 import mobileSocialImg from '../img/mobile-social.png';
+import mobileHustleImg from '../img/mobile-hustle.png';
 import mobileSortingImg from '../img/mobile-sorting.png';
 
 const breakPoints = [
@@ -71,6 +73,9 @@ const PageWrapper = styled.div`
   #social{
     background-image:url(${socialImg});
   }
+  #hustle{
+    background-image:url(${hustleImg});
+  }
   #sorting{
     background-image:url(${sortingImg});
   }
@@ -83,6 +88,9 @@ const PageWrapper = styled.div`
   }
   #social{
     background-image:url(${mobileSocialImg});
+  }
+  #hustle{
+    background-image:url(${mobileHustleImg});
   }
   #sorting{
     background-image:url(${mobileSortingImg});
@@ -99,6 +107,9 @@ function Projects() {
         </a>
         <a title="Django-React Project" href="https://socialme-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
           <Item id="social"></Item>
+        </a>
+        <a title="Freelance Project" href="https://www.hustleautodetail.com/" target="_blank" rel="noopener noreferrer">
+          <Item id="hustle"></Item>
         </a>
         <a title="Javascript Project" href="https://flip-mem-game.netlify.app/" target="_blank" rel="noopener noreferrer">
           <Item id="flip"></Item>
