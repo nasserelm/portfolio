@@ -4,16 +4,16 @@ import myImg from '../img/newyork1.jpeg';
 
 const ResumeContainer = styled.a`
   padding: 1rem 0rem;
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-size: 3rem;
   color: white;
   text-decoration: none;
-  @media (min-width: 800px){
+  @media (min-width: 800px) {
     font-size: 7vmin;
-    :hover{
+    :hover {
       text-decoration: none;
-      color: #ffc700;
-      cursor:pointer;
+      color: #8b9092;
+      cursor: pointer;
     }
   }
 `;
@@ -38,7 +38,6 @@ const Description = styled.div`
   align-items: left;
   h2 {
     width: fit-content;
-    }
   }
   h4 {
     font-family: "Raleway", sans-serif;

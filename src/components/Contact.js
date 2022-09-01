@@ -38,7 +38,7 @@ const Underline = styled.div`
 `
 
 const FormContainer = styled.form`
-  display:flex;
+  display: flex;
   flex-direction: column;
   padding-top: 2.5vh;
   width: 75vw;
@@ -81,32 +81,32 @@ const FormContainer = styled.form`
     border: 2px solid white;
     width: 7rem;
     align-self: flex-end;
-    font-size:1.35rem;
+    font-size: 1.35rem;
     cursor: pointer;
   }
   /* Only use hover when the user is not in touchscreen */
-  @media(hover: hover){
+  @media (hover: hover) {
     button:hover {
       transition: 0.5s;
-      color: #ffc700;
-      border-color: #ffc700;
+      color: #8b9092;
+      border-color: #8b9092;
     }
   }
-`
+`;
 
 const IconContainer = styled.ul`
-  padding-top:2.5vh;
+  padding-top: 2.5vh;
   margin-top: 5vh;
   width: 100vw;
   // background-color: #003e61;
   background-color: #072737;
-  display:flex;
+  display: flex;
   color: white;
   align-items: center;
   justify-content: space-evenly;
   a {
-    color:white;
-    text-decoration:none;
+    color: white;
+    text-decoration: none;
     /* margin: 0 10vw; */
     transition: transform 1s;
     margin: 2rem 0;
@@ -118,16 +118,16 @@ const IconContainer = styled.ul`
     /* transition: transform 0.5s; */
     transition: color 1s;
   }
-  @media(hover: hover){
+  @media (hover: hover) {
     svg:hover {
-      color: #ffc700;
+      color: #8b9092;
       /* transform: scale(1.50); */
     }
     a:hover {
-      transform: rotateY(360deg)
+      transform: rotateY(360deg);
     }
-  } 
-`
+  }
+`;
 
 const Copyright = styled.div`
   // background-color: #003e61;

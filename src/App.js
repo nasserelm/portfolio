@@ -30,7 +30,6 @@ function App() {
   return (
     <React.Fragment>
       <GlobalStyle />
-
       <FullPage>
         <NavBar/>
         <Home/>

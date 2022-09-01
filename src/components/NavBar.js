@@ -1,17 +1,20 @@
 import React, { useState } from "react";
 import styled from "styled-components/macro";
 import { Link } from "react-scroll";
+import background from "../img/nav-background.png";
+
 // import image from "../images/logo.png";
 
 // --------------------------------------------------- Start Here -------------------------------------------
 const NavBarItems = styled.nav`
   // background-image: linear-gradient(335deg,#003e61,#1e2f59 70%,#ffc700);
-  background-color: #072737;
+  /* background-color: #535d61; */
+  background-image: url(${background});
   font-family: "Raleway", sans-serif;
   color: white;
   width: 100%;
   height: 3.5rem;
-  border-bottom: 0.15rem solid #ffc700;
+  /* border-bottom: 0.15rem solid white; */
   position: fixed;
   top: 0;
   left: 0;
@@ -71,7 +74,7 @@ const LinksList = styled.ul`
     color: white;
   }
   .active {
-    color: #ffc700;
+    color: #8b9092;
   }
   /* Extra padding to first and last child so all of them have same overall padding */
   a:first-child {
@@ -95,7 +98,7 @@ const LinksList = styled.ul`
       text-align: center;
     }
     a:hover {
-      color: #ffc700; //326fa8
+      color: #8b9092; //326fa8
     }
   }
 `;
