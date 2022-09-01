@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import myImg from '../img/newyork1.jpeg';
+import myImg from '../img/skills.png';
 
 const ResumeContainer = styled.a`
   padding: 1rem 0rem;
@@ -52,7 +52,7 @@ const Description = styled.div`
 `
 
 const PageWrapper = styled.div`
-    height: calc(100vh - 3.65rem);
+    height: calc(100vh - 3rem);
     overflow: hidden;
     // background-image: linear-gradient(335deg,#003e61,#1e2f59 90%,#ffc700);
     background-color: #072737;
