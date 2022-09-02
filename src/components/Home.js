@@ -153,9 +153,9 @@ function Home() {
             number: {
               density: {
                 enable: true,
-                area: 350,
+                area: 380,
               },
-              value: 100,
+              value: 90,
             },
             opacity: {
               value: 0.5,
