@@ -44,7 +44,7 @@ const PageWrapper = styled.div`
   height: calc(100vh - 3.65rem);
   min-height: calc(100vh - 3.65rem);
   // background-image: linear-gradient(335deg,#003e61,#1e2f59 100%,#ffc700);
-  background-color: #072737;
+  background-color: #1c1c21;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,46 +55,46 @@ const PageWrapper = styled.div`
   button {
     color: white;
   }
-  .rec-pagination{
+  .rec-pagination {
     button {
       background-color: white;
     }
   }
-  #cryptos{
-    background-image:url(${cryptosImg});
-    :hover{
+  #cryptos {
+    background-image: url(${cryptosImg});
+    :hover {
       text-decoration: none;
-      cursor:pointer;
+      cursor: pointer;
     }
   }
-  #flip{
-    background-image:url(${flipImg});
+  #flip {
+    background-image: url(${flipImg});
   }
-  #social{
-    background-image:url(${socialImg});
+  #social {
+    background-image: url(${socialImg});
   }
-  #hustle{
-    background-image:url(${hustleImg});
+  #hustle {
+    background-image: url(${hustleImg});
   }
-  #sorting{
-    background-image:url(${sortingImg});
+  #sorting {
+    background-image: url(${sortingImg});
   }
   @media (max-width: 760px) {
-  #cryptos{
-    background-image:url(${mobileCryptosImg});
-  }
-  #flip{
-    background-image:url(${mobileFlipImg});
-  }
-  #social{
-    background-image:url(${mobileSocialImg});
-  }
-  #hustle{
-    background-image:url(${mobileHustleImg});
-  }
-  #sorting{
-    background-image:url(${mobileSortingImg});
-  }
+    #cryptos {
+      background-image: url(${mobileCryptosImg});
+    }
+    #flip {
+      background-image: url(${mobileFlipImg});
+    }
+    #social {
+      background-image: url(${mobileSocialImg});
+    }
+    #hustle {
+      background-image: url(${mobileHustleImg});
+    }
+    #sorting {
+      background-image: url(${mobileSortingImg});
+    }
   }
 `;
 
