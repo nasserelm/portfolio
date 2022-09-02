@@ -27,7 +27,8 @@ const Heading = styled.div`
   align-items: center;
   justify-content: center;
   padding-top: 2.5vh;
-`
+  cursor: default;
+`;
 
 const Underline = styled.div`
   background-color: white;

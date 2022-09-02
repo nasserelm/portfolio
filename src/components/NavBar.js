@@ -46,6 +46,7 @@ const Container = styled.div`
 
 const Logo = styled.h1`
   font-size: 1.6rem;
+  cursor: default;
 `;
 
 const MenuIcon = styled.div`
