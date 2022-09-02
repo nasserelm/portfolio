@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import myImg from '../img/skills.png';
+import myImg from '../img/about-image1.png';
 
 const ResumeContainer = styled.a`
   padding: 1rem 0rem;
