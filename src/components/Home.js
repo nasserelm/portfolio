@@ -57,7 +57,7 @@ const PageWrapper = styled.div`
       font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
         "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-      font-size: 3rem;
+      font-size: 4rem;
       user-select: none;
       pointer-events: none;
       background: linear-gradient(
@@ -74,7 +74,7 @@ const PageWrapper = styled.div`
       font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI",
         Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji",
         "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-      font-size: 3rem;
+      font-size: 4rem;
       user-select: none;
       pointer-events: none;
       background: linear-gradient(
