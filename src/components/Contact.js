@@ -1,23 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
-import {FaLinkedin, FaInstagram, FaTwitterSquare, FaGithub} from "react-icons/fa";
-
-function validateText(inputText){
-  // Checking for letters and at least 3 characters
-  let text = inputText;
-  let regExp = /[a-zA-Z]/g;
-  let n = text.length
-  if (n > 3 && regExp.test(text)){
-    return true;
-  } else {
-    return false;
-  }
-}
-
-function sendEmail(name, message){
-  // open email client app or redirect to email browser
-  window.open(`mailto:mughrabi.nasser@gmail.com?subject=Portfolio Email from ${name}&body=${message}`);
-}
+import {FaLinkedin, FaInstagram, FaGithub} from "react-icons/fa";
+import { AiOutlineMail } from "react-icons/ai";
 
 const Heading = styled.div`
   color: white;
@@ -156,16 +140,10 @@ function Contact() {
   // Function to handle submit button click
   // Checks if the form is valid and sends email in case it is 
   function handleClick() {
-    let name = document.getElementById('Name').value
-    let message = document.getElementById('Message').value
-
-    if (!validateText(name)){
-      alert('You need to enter a valid name');
-    } else if (!validateText(message)){
-      alert('You need to enter a valid message');
-    } else {
-      sendEmail(name, message);
-    }
+    let name = document.getElementById('Name').value;
+    let message = document.getElementById('Message').value;
+    // open email client app or redirect to email browser
+    window.open(`mailto:mughrabi.nasser@gmail.com?subject=Portfolio Email from ${name}&body=${message}`);
   }
 
   return (
@@ -180,7 +158,7 @@ function Contact() {
         <button type='button' onClick={handleClick}>Submit</button>
       </FormContainer>
       <IconContainer>
-        <a href="https://twitter.com/MughrabiNasser/" target="_blank" rel="noopener noreferrer"><FaTwitterSquare /></a>
+        <a href="https://www.nassermughrabi.com" target="_blank" rel="noopener noreferrer" onClick={handleClick}><AiOutlineMail /></a>
         <a href="https://www.instagram.com/nasser_mughrabi/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
         <a href="https://www.linkedin.com/in/nasser258/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
         <a href="https://github.com/NasserMughrabi/" target="_blank" rel="noopener noreferrer"><FaGithub /></a>

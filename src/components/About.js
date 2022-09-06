@@ -78,15 +78,33 @@ const PageWrapper = styled.div`
 
 function About() {
   return (
-    <PageWrapper id="about">
+    <PageWrapper id='about'>
       <ImageContainer></ImageContainer>
       <Description>
-        <h2><ResumeContainer title="My Resume" href={process.env.PUBLIC_URL + "MyResume.pdf"} target="_blank">Nasser Mughrabi</ResumeContainer></h2>
-        <h4>Current computer science student at the University of Utah with fundamental knowledge of software design, development, and testing.
+        <h2>
+          <ResumeContainer
+            title='My Resume'
+            href={process.env.PUBLIC_URL + "MyResume.pdf"}
+            target='_blank'
+          >
+            Nasser Mughrabi
+          </ResumeContainer>
+        </h2>
+        <h4>
+          Current computer science student at the University of Utah.
+          Passionate about programming and solving problems using the most
+          efficient algorithms and data structures accessible.
           <br></br>
-          Passionate about programming and solving problems using the most efficient algorithms and data structures accessible. 
+          For the past two years of school, I have been working on Full Stack
+          Developement projects. In this time, I have gained extensive
+          experience in both front-end and back-end development. I am confident
+          in my ability to create high-quality and well-functioning web
+          applications. I am also experienced in using various programming
+          languages and frameworks, such as React, Django, Node.js, and more.
           <br></br>
-          Working on team and personal projects helped put computer science concepts, problem-solving techniques, and teamwork skills into practice.
+          Working on team and personal projects helped put Full Stack
+          development skills, problem-solving techniques, and teamwork skills
+          into practice. 
         </h4>
       </Description>
     </PageWrapper>

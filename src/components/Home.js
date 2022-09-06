@@ -147,7 +147,7 @@ function Home() {
                 default: "bounce",
               },
               random: false,
-              speed: 1.4,
+              speed: 1.2,
               straight: false,
             },
             number: {
