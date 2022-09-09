@@ -95,7 +95,7 @@ function About() {
           Passionate about programming and solving problems using the most
           efficient algorithms and data structures accessible.
           <br></br>
-          For the past two years of school, I have been working on Full Stack
+          For the past two years, I have been working on Full Stack
           Developement projects. In this time, I have gained extensive
           experience in both front-end and back-end development. I am confident
           in my ability to create high-quality and well-functioning web
