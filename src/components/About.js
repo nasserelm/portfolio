@@ -25,7 +25,7 @@ const ImageContainer = styled.div`
   background-position: 60% 40%;
   background-repeat: no-repeat;
   // filter: brightness(170%); 
-  @media (max-width: 760px) {
+  @media (max-width: 1024px) {
     display:none;
   }
 `
@@ -42,7 +42,7 @@ const Description = styled.div`
   h4 {
     font-family: "Raleway", sans-serif;
     padding: 1rem 0rem;
-    line-height: 1.6rem;
+    line-height: 1.2rem;
     font-size: 1rem;
     @media (min-width: 800px){
       font-size: 2.5vmin;
@@ -63,12 +63,12 @@ const PageWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(
+    /* background-image: linear-gradient(
         to bottom,
         rgba(0, 0, 0, 0.3),
         rgba(0, 0, 0, 0.3)
       ),
-      url(${myImg});
+      url(${myImg}); */
     background-size: cover;
     background-position: 40% 10%;
     text-shadow: 1px 1px black;
