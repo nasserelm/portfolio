@@ -1,12 +1,12 @@
 import React from "react";
 import styled from "styled-components/macro";
 import Carousel from "react-elastic-carousel";
-import cryptosImg from "../img/both-cryptos.png";
+import taImg from "../img/both-ta.png";
 import flipImg from "../img/both-flip.png";
 import socialImg from "../img/both-social.png";
 import hustleImg from "../img/both-hustle.png";
 import sortingImg from "../img/both-sorting.png";
-import mobileCryptosImg from "../img/mobile-cryptos.png";
+import mobiletaImg from "../img/mobile-ta.png";
 import mobileFlipImg from "../img/mobile-flip.png";
 import mobileSocialImg from "../img/mobile-social.png";
 import mobileHustleImg from "../img/mobile-hustle.png";
@@ -134,8 +134,8 @@ const PageWrapper = styled.div`
       background-color: white;
     }
   }
-  #cryptos {
-    background-image: url(${cryptosImg});
+  #ta {
+    background-image: url(${taImg});
     :hover {
       text-decoration: none;
       cursor: pointer;
@@ -154,8 +154,8 @@ const PageWrapper = styled.div`
     background-image: url(${sortingImg});
   }
   @media (max-width: 760px) {
-    #cryptos {
-      background-image: url(${mobileCryptosImg});
+    #ta {
+      background-image: url(${mobiletaImg});
     }
     #flip {
       background-image: url(${mobileFlipImg});
@@ -213,6 +213,14 @@ function Projects() {
           <Item id='social'></Item>
         </a>
         <a
+          title='ASP Core Project'
+          href='https://34.202.28.113.nip.io/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <Item id='ta'></Item>
+        </a>
+        <a
           title='Freelance Project'
           href='https://www.hustleautodetail.com/'
           target='_blank'
@@ -227,14 +235,6 @@ function Projects() {
           rel='noopener noreferrer'
         >
           <Item id='flip'></Item>
-        </a>
-        <a
-          title='React Project'
-          href='https://cryptos-proj.netlify.app/'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <Item id='cryptos'></Item>
         </a>
       </Carousel>
     </PageWrapper>
