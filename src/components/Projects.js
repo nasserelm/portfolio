@@ -192,7 +192,7 @@ function Projects() {
         </div>
       </TickerWrapper> */}
       <div className='projects-guide'>
-        <BsFillArrowDownSquareFill /> Click/Tap To Naviagate{" "}
+        <BsFillArrowDownSquareFill /> Click/Tap To Navigate{" "}
         <BsFillArrowDownSquareFill />
       </div>
       <Carousel breakPoints={breakPoints}>

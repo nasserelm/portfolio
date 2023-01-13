@@ -155,7 +155,7 @@ function Home() {
                 enable: true,
                 area: 380,
               },
-              value: 90,
+              value: 45,
             },
             opacity: {
               value: 0.5,
@@ -173,9 +173,7 @@ function Home() {
         }}
       />
       <article>
-        <h1>
-          NASSER MUGHRABI
-        </h1>
+        <h1>NASSER MUGHRABI</h1>
         <h2>Full-Stack Software Developer</h2>
       </article>
     </PageWrapper>
