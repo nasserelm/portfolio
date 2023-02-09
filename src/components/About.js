@@ -84,7 +84,7 @@ function About() {
         <h2>
           <ResumeContainer
             title='My Resume'
-            href={process.env.PUBLIC_URL + "MyResume.pdf"}
+            href={process.env.PUBLIC_URL + "Nasser_Resume.pdf"}
             target='_blank'
           >
             Nasser Mughrabi
