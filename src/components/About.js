@@ -25,7 +25,7 @@ const ImageContainer = styled.div`
   background-position: 60% 40%;
   background-repeat: no-repeat;
   // filter: brightness(170%);
-  @media (max-width: 1024px) {
+  @media (max-width: 796px) {
     display: none;
   }
 `;
@@ -44,7 +44,8 @@ const Description = styled.div`
     padding: 1rem 0rem;
     line-height: 1.2rem;
     font-size: 1rem;
-    @media (min-width: 800px) {
+    @media (min-width: 1023px) {
+      //800px
       font-size: 2.5vmin;
       line-height: 5vmin;
     }
@@ -76,6 +77,31 @@ const PageWrapper = styled.div`
   }
 `;
 
+const Button = styled.button`
+  /* Button styles */
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #2196f3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+
+  /* Hover styles */
+  &:hover {
+    background-color: #0d8bf0;
+  }
+
+  /* Disabled styles */
+  &:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+`;
+
 function About() {
   return (
     <PageWrapper id='about'>
@@ -91,21 +117,25 @@ function About() {
           </ResumeContainer>
         </h2>
         <h4>
-          Current computer science student at the University of Utah. Passionate
-          about programming and solving problems using the most efficient
-          algorithms and data structures accessible.
+          Senior computer science student at the University of Utah and Software
+          Developer Intern at Amotions Inc.
           <br></br>
-          For the past two years, I have been working on Full Stack Developement
-          projects. In this time, I have gained extensive experience in both
-          front-end and back-end development. I am confident in my ability to
-          create high-quality and well-functioning web applications. I am also
-          experienced in using various programming languages and frameworks,
-          such as React, Django, Node.js, and more.
           <br></br>
-          Working on team and personal projects helped put Full Stack
-          development skills, problem-solving techniques, and teamwork skills
-          into practice.
+          Imagine a dedicated software developer who effortlessly navigates the
+          ever-changing landscape of technology, fearlessly tackling complex
+          problems and seamlessly collaborating with diverse teams. I am that
+          developer, always ready to embark on the next exciting challenge.
+          <br></br>
+          <br></br>
         </h4>
+        <Button href={process.env.PUBLIC_URL + "Nasser_Resume.pdf"}>
+          <a
+            href={process.env.PUBLIC_URL + "Nasser_Resume.pdf"}
+            style={{textDecoration: 'none', color: 'inherit'}}
+          >
+            Resume
+          </a>
+        </Button>
       </Description>
     </PageWrapper>
   );
