@@ -128,10 +128,11 @@ function About() {
           <br></br>
           <br></br>
         </h4>
-        <Button href={process.env.PUBLIC_URL + "Nasser_Resume.pdf"}>
+        <Button>
           <a
             href={process.env.PUBLIC_URL + "Nasser_Resume.pdf"}
-            style={{textDecoration: 'none', color: 'inherit'}}
+            style={{ textDecoration: "none", color: "inherit" }}
+            target='_blank'
           >
             Resume
           </a>
