@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import myImg from "../img/nassers.jpg";
+import myImg from "../img/myImage.jpg";
 
 const ResumeContainer = styled.a`
   padding: 1rem 0rem;
@@ -77,7 +77,7 @@ const PageWrapper = styled.div`
   }
 `;
 
-const Button = styled.button`
+const Button = styled.a`
   /* Button styles */
   padding: 10px 20px;
   font-size: 16px;
@@ -89,6 +89,7 @@ const Button = styled.button`
   font-family: sans-serif;
   font-size: 24px;
   font-weight: bold;
+  text-align: center;
 
   /* Hover styles */
   &:hover {
@@ -128,14 +129,13 @@ function About() {
           <br></br>
           <br></br>
         </h4>
-        <Button>
-          <a
-            href={process.env.PUBLIC_URL + "Nasser_Resume.pdf"}
-            style={{ textDecoration: "none", color: "inherit" }}
-            target='_blank'
-          >
-            Resume
-          </a>
+
+        <Button
+          href={process.env.PUBLIC_URL + "Nasser_Resume.pdf"}
+          style={{ textDecoration: "none", color: "inherit" }}
+          target='_blank'
+        >
+          Resume
         </Button>
       </Description>
     </PageWrapper>

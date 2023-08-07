@@ -1,16 +1,14 @@
 import React from "react";
 import styled from "styled-components/macro";
 import Carousel from "react-elastic-carousel";
-import taImg from "../img/both-ta.png";
 import flipImg from "../img/both-flip.png";
-import socialImg from "../img/both-social.png";
 import hustleImg from "../img/both-hustle.png";
 import sortingImg from "../img/both-sorting.png";
-import mobiletaImg from "../img/mobile-ta.png";
+import naschatsImg from "../img/both-naschats.png";
 import mobileFlipImg from "../img/mobile-flip.png";
-import mobileSocialImg from "../img/mobile-social.png";
 import mobileHustleImg from "../img/mobile-hustle.png";
 import mobileSortingImg from "../img/mobile-sorting.png";
+import mobileNaschatsImg from "../img/mobile-naschats.png";
 import { BsFillArrowDownSquareFill } from "react-icons/bs";
 
 const breakPoints = [{ width: 1, itemsToShow: 1 }];
@@ -134,8 +132,8 @@ const PageWrapper = styled.div`
       background-color: white;
     }
   }
-  #ta {
-    background-image: url(${taImg});
+  #naschats {
+    background-image: url(${naschatsImg});
     :hover {
       text-decoration: none;
       cursor: pointer;
@@ -144,30 +142,24 @@ const PageWrapper = styled.div`
   #flip {
     background-image: url(${flipImg});
   }
-  #social {
-    background-image: url(${socialImg});
+  #sorting {
+    background-image: url(${sortingImg});
   }
   #hustle {
     background-image: url(${hustleImg});
   }
-  #sorting {
-    background-image: url(${sortingImg});
-  }
   @media (max-width: 760px) {
-    #ta {
-      background-image: url(${mobiletaImg});
+    #naschats {
+      background-image: url(${mobileNaschatsImg});
     }
     #flip {
       background-image: url(${mobileFlipImg});
     }
-    #social {
-      background-image: url(${mobileSocialImg});
+    #sorting {
+      background-image: url(${mobileSortingImg});
     }
     #hustle {
       background-image: url(${mobileHustleImg});
-    }
-    #sorting {
-      background-image: url(${mobileSortingImg});
     }
   }
 `;
@@ -197,6 +189,14 @@ function Projects() {
       </div>
       <Carousel breakPoints={breakPoints}>
         <a
+          title='Nextjs Project'
+          href='https://naschats.netlify.app/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <Item id='naschats'></Item>
+        </a>
+        <a
           title='React Project'
           href='https://sortingalgos-app.netlify.app/'
           target='_blank'
@@ -205,24 +205,8 @@ function Projects() {
           <Item id='sorting'></Item>
         </a>
         <a
-          title='Django-React Project'
-          href='https://socialme-app.herokuapp.com/'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <Item id='social'></Item>
-        </a>
-        <a
-          title='ASP Core Project'
-          href='https://34.202.28.113.nip.io/'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <Item id='ta'></Item>
-        </a>
-        <a
-          title='Freelance Project'
-          href='https://www.hustleautodetail.com/'
+          title='React Project'
+          href='https://hustlecomp.netlify.app/'
           target='_blank'
           rel='noopener noreferrer'
         >
