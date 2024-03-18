@@ -26,16 +26,15 @@ const FullPage = styled.div`
 `;
 
 function App() {
-
   return (
     <React.Fragment>
       <GlobalStyle />
       <FullPage>
-        <NavBar/>
-        <Home/>
-        <About/>
-        <Projects/>
-        <Contact/>
+        <NavBar />
+        <Home />
+        <About />
+        <Projects />
+        <Contact />
       </FullPage>
     </React.Fragment>
   );

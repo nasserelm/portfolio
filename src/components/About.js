@@ -118,14 +118,13 @@ function About() {
           </ResumeContainer>
         </h2>
         <h4>
-          Senior computer science student at the University of Utah and Software
-          Developer Intern at Amotions Inc.
+          Recent University of Utah Grad with BS in Computer Science and part-time Software
+          Engineer at Amotions Inc.
           <br></br>
           <br></br>
-          Imagine a dedicated software developer who effortlessly navigates the
+          A dedicated software engineer who effortlessly navigates the
           ever-changing landscape of technology, fearlessly tackling complex
-          problems and seamlessly collaborating with diverse teams. I am that
-          developer, always ready to embark on the next exciting challenge.
+          problems and seamlessly collaborating with diverse teams. Always ready to embark on the next exciting challenge.
           <br></br>
           <br></br>
         </h4>

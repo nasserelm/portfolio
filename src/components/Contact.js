@@ -163,7 +163,7 @@ function Contact() {
         <a href="https://www.linkedin.com/in/nasser258/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
         <a href="https://github.com/NasserMughrabi/" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
       </IconContainer>
-      <Copyright>Nasser Mughrabi <i class="fa fa-copyright"></i> 2022</Copyright>
+      <Copyright>Nasser Mughrabi <i class="fa fa-copyright"></i> 2024</Copyright>
     </PageWrapper>
   );
 }
