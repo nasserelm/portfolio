@@ -111,7 +111,7 @@ function About() {
         <h2>
           <ResumeContainer
             title='My Resume'
-            href={process.env.PUBLIC_URL + "Nasser_Resume.pdf"}
+            href={process.env.PUBLIC_URL + "Nasser_Mughrabi_Resume.pdf"}
             target='_blank'
           >
             Nasser Mughrabi
@@ -130,7 +130,7 @@ function About() {
         </h4>
 
         <Button
-          href={process.env.PUBLIC_URL + "NasserResume.pdf"}
+          href={process.env.PUBLIC_URL + "Nasser_Mughrabi_resume.pdf"}
           style={{ textDecoration: "none", color: "inherit" }}
           target='_blank'
         >
