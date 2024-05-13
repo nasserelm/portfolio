@@ -84,6 +84,7 @@ const TickerWrapper = styled.div`
 
 const Item = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 70vh;
@@ -94,6 +95,7 @@ const Item = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   background-position: 50% 50%;
+  position: relative;
   @media (max-width: 800px) {
     background-size: 90%;
   }
@@ -109,21 +111,21 @@ const Item = styled.div`
 const PageWrapper = styled.div`
   height: calc(100vh - 3.65rem);
   min-height: calc(100vh - 3.65rem);
-  // background-image: linear-gradient(335deg,#003e61,#1e2f59 100%,#ffc700);
   background-color: #1c1c21;
   display: block;
   align-items: center;
   justify-content: center;
   .projects-guide {
+    position: relative;
     color: white;
     font-size: 1.5rem;
     text-align: center;
-    padding-top: 3rem;
+    padding-top: 2rem;
   }
-  a {
-    height: 70vh;
-    width: 100%;
-  }
+  // a {
+  //   height: 70vh;
+  //   width: 100%;
+  // }
   button {
     color: white;
   }
@@ -131,6 +133,9 @@ const PageWrapper = styled.div`
     button {
       background-color: white;
     }
+  }
+  .website-btn {
+    margin-right: 10px;
   }
   #naschats {
     background-image: url(${naschatsImg});
@@ -164,62 +169,178 @@ const PageWrapper = styled.div`
   }
 `;
 
+const Button = styled.button`
+  color: white;
+  background-color: #1e1e1e;
+  border: 2px solid #515151;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 22px;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+
+  &:hover {
+    background-color: #515151;
+    color: #fff;
+    border: 2px solid #1e1e1e;
+  }
+
+  &:active {
+    background-color: #333;
+    border: 2px solid #333;
+  }
+`;
+
+const ButtonContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  padding: 1rem;
+  width: 100%;
+  // background: rgba(0, 0, 0, 0.5);
+`;
+
+const ProjectContainer = styled.div`
+  width: 100%;
+`;
+
 function Projects() {
   return (
-    <PageWrapper id='projects'>
-      {/* <TickerWrapper>
-        <div class='ticker'>
-          <div class='ticker-item'>
-            <BsFillArrowDownSquareFill /> Click/Tap To Naviagate{" "}
-            <BsFillArrowDownSquareFill />
-          </div>
-          <div class='ticker-item'>
-            <BsFillArrowDownSquareFill /> Click/Tap To Naviagate{" "}
-            <BsFillArrowDownSquareFill />
-          </div>
-          <div class='ticker-item'>
-            <BsFillArrowDownSquareFill /> Click/Tap To Naviagate{" "}
-            <BsFillArrowDownSquareFill />
-          </div>
-        </div>
-      </TickerWrapper> */}
-      <div className='projects-guide'>
-        <BsFillArrowDownSquareFill /> Click/Tap To Navigate{" "}
-        <BsFillArrowDownSquareFill />
-      </div>
+    <PageWrapper id="projects">
+      {/* <div className="projects-guide">
+        <a
+          title="Nextjs Project"
+          href="https://naschats.netlify.app/"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="website-btn"
+        >
+          <Button>Website</Button>
+        </a>
+        <a
+          title="Nextjs Project"
+          href="https://github.com/NasserMughrabi/naschats"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="github-btn"
+        >
+          <Button>Source Code</Button>
+        </a>
+      </div> */}
       <Carousel breakPoints={breakPoints}>
-        <a
-          title='Nextjs Project'
-          href='https://naschats.netlify.app/'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <Item id='naschats'></Item>
-        </a>
-        <a
-          title='React Project'
-          href='https://sortingalgos-app.netlify.app/'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <Item id='sorting'></Item>
-        </a>
-        <a
-          title='React Project'
-          href='https://hustlecomp.netlify.app/'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <Item id='hustle'></Item>
-        </a>
-        <a
-          title='Javascript Project'
-          href='https://flip-mem-game.netlify.app/'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          <Item id='flip'></Item>
-        </a>
+        <ProjectContainer>
+          <a
+            title="Nextjs Project"
+            href="https://naschats.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Item id="naschats"></Item>
+          </a>
+          <ButtonContainer>
+            <a
+              // title="Nextjs Project"
+              href="https://naschats.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>Website</Button>
+            </a>
+            <a
+              // title="Nextjs Project"
+              href="https://github.com/NasserMughrabi/naschats"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>Source Code</Button>
+            </a>
+          </ButtonContainer>
+        </ProjectContainer>
+        <ProjectContainer>
+          <a
+            // title="React Project"
+            href="https://sortingalgos-app.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Item id="sorting"></Item>
+          </a>
+          <ButtonContainer>
+            <a
+              // title="React Project"
+              href="https://sortingalgos-app.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>Website</Button>
+            </a>
+            <a
+              title="React Project"
+              href="https://github.com/NasserMughrabi/sorting-algos"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>Source Code</Button>
+            </a>
+          </ButtonContainer>
+        </ProjectContainer>
+        <ProjectContainer>
+          <a
+            title="React Project"
+            href="https://hustlecomp.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Item id="hustle"></Item>
+          </a>
+          <ButtonContainer>
+            <a
+              title="React Project"
+              href="https://hustlecomp.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>Website</Button>
+            </a>
+            <a
+              title="React Project"
+              href="https://github.com/NasserMughrabi/hustle"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>Source Code</Button>
+            </a>
+          </ButtonContainer>
+        </ProjectContainer>
+        <ProjectContainer>
+          <a
+            title="Javascript Project"
+            href="https://flip-mem-game.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Item id="flip"></Item>
+          </a>
+          <ButtonContainer>
+            <a
+              title="Javascript Project"
+              href="https://flip-mem-game.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>Website</Button>
+            </a>
+            <a
+              title="Javascript Project"
+              href="https://github.com/NasserMughrabi/flipGame"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>Source Code</Button>
+            </a>
+          </ButtonContainer>
+        </ProjectContainer>
       </Carousel>
     </PageWrapper>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components/macro";
 import myImg from "../img/myImage.jpg";
+import me from "../img/me.jpeg";
 
 const ResumeContainer = styled.a`
   padding: 1rem 0rem;
@@ -20,7 +21,7 @@ const ResumeContainer = styled.a`
 
 const ImageContainer = styled.div`
   overflow: hidden;
-  background-image: url(${myImg});
+  background-image: url(${me});
   background-size: cover;
   background-position: 60% 40%;
   background-repeat: no-repeat;
