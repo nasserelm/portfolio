@@ -106,26 +106,25 @@ const Button = styled.a`
 
 function About() {
   return (
-    <PageWrapper id='about'>
+    <PageWrapper id="about">
       <ImageContainer></ImageContainer>
       <Description>
         <h2>
           <ResumeContainer
-            title='My Resume'
+            title="My Resume"
             href={process.env.PUBLIC_URL + "Nasser_Mughrabi_Resume.pdf"}
-            target='_blank'
+            target="_blank"
           >
             Nasser Mughrabi
           </ResumeContainer>
         </h2>
         <h4>
-          Recent University of Utah Grad with BS in Computer Science and part-time Software
-          Engineer at Amotions Inc.
+          Software Engineer at Amotions Inc. with Bachelor's in Computer Science from the University of Utah 
           <br></br>
-          <br></br>
-          A dedicated software engineer who effortlessly navigates the
+          <br></br>A dedicated software engineer who effortlessly navigates the
           ever-changing landscape of technology, fearlessly tackling complex
-          problems and seamlessly collaborating with diverse teams. Always ready to embark on the next exciting challenge.
+          problems and seamlessly collaborating with diverse teams. Always ready
+          to embark on the next exciting challenge.
           <br></br>
           <br></br>
         </h4>
@@ -133,7 +132,7 @@ function About() {
         <Button
           href={process.env.PUBLIC_URL + "Nasser_Mughrabi_resume.pdf"}
           style={{ textDecoration: "none", color: "inherit" }}
-          target='_blank'
+          target="_blank"
         >
           Resume
         </Button>
