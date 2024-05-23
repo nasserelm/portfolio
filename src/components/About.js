@@ -112,14 +112,15 @@ function About() {
         <h2>
           <ResumeContainer
             title="My Resume"
-            href={process.env.PUBLIC_URL + "Nasser_Mughrabi_Resume.pdf"}
+            // href={process.env.PUBLIC_URL + "Nasser_Mughrabi_Resume.pdf"}
             target="_blank"
           >
             Nasser Mughrabi
           </ResumeContainer>
         </h2>
         <h4>
-          Software Engineer at Amotions Inc. with Bachelor's in Computer Science from the University of Utah 
+          Software Engineer at Amotions Inc. with Bachelor's in Computer Science
+          from the University of Utah
           <br></br>
           <br></br>A dedicated software engineer who effortlessly navigates the
           ever-changing landscape of technology, fearlessly tackling complex
@@ -129,13 +130,13 @@ function About() {
           <br></br>
         </h4>
 
-        <Button
+        {/* <Button
           href={process.env.PUBLIC_URL + "Nasser_Mughrabi_resume.pdf"}
           style={{ textDecoration: "none", color: "inherit" }}
           target="_blank"
         >
           Resume
-        </Button>
+        </Button> */}
       </Description>
     </PageWrapper>
   );
