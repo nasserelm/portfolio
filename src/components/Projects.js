@@ -195,6 +195,7 @@ const Button = styled.button`
 const ButtonContainer = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: auto;
   padding: 1rem;
   width: 100%;
@@ -203,6 +204,36 @@ const ButtonContainer = styled.div`
 
 const ProjectContainer = styled.div`
   width: 100%;
+`;
+
+const TagsContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  @media (max-width: 760px) {
+    display: none; /* Correct value to hide the container */
+  }
+`;
+
+const StyledTag = styled.div`
+  color: #2b6cb0;
+  border-radius: 9999px;
+  border: 1px solid #2b6cb0;
+  background-color: transparent;
+  padding: 0.25rem 0.75rem;
+  font-size: 0.875rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  margin-left: 0.5rem;
+  display: flex;
+  align-items: center;
+  height: 35px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #2b6cb0;
+    color: black;
+  }
 `;
 
 function Projects() {
@@ -256,6 +287,11 @@ function Projects() {
               <Button>Source Code</Button>
             </a>
           </ButtonContainer>
+          <TagsContainer>
+            <StyledTag>Next.js/React</StyledTag>
+            <StyledTag>Firebase</StyledTag> <StyledTag>LangChain</StyledTag>{" "}
+            <StyledTag>GPT API</StyledTag>{" "}
+          </TagsContainer>
         </ProjectContainer>
         <ProjectContainer>
           <a
@@ -284,6 +320,10 @@ function Projects() {
               <Button>Source Code</Button>
             </a>
           </ButtonContainer>
+          <TagsContainer>
+            <StyledTag>React</StyledTag>
+            <StyledTag>JavaScript</StyledTag> <StyledTag>CSS/HTML</StyledTag>{" "}
+          </TagsContainer>
         </ProjectContainer>
         <ProjectContainer>
           <a
@@ -312,6 +352,11 @@ function Projects() {
               <Button>Source Code</Button>
             </a>
           </ButtonContainer>
+          <TagsContainer>
+            <StyledTag>React</StyledTag>
+            <StyledTag>JavaScript</StyledTag>
+            <StyledTag>CSS/HTML</StyledTag>{" "}
+          </TagsContainer>
         </ProjectContainer>
         <ProjectContainer>
           <a
@@ -340,6 +385,11 @@ function Projects() {
               <Button>Source Code</Button>
             </a>
           </ButtonContainer>
+          <TagsContainer>
+            <StyledTag>JavaScript</StyledTag>
+            <StyledTag>CSS</StyledTag>
+            <StyledTag>HTML</StyledTag>{" "}
+          </TagsContainer>
         </ProjectContainer>
       </Carousel>
     </PageWrapper>
