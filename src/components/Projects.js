@@ -247,26 +247,6 @@ const StyledTag = styled.div`
 function Projects() {
   return (
     <PageWrapper id="projects">
-      {/* <div className="projects-guide">
-        <a
-          title="Nextjs Project"
-          href="https://naschats.netlify.app/"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="website-btn"
-        >
-          <Button>Website</Button>
-        </a>
-        <a
-          title="Nextjs Project"
-          href="https://github.com/NasserMughrabi/naschats"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="github-btn"
-        >
-          <Button>Source Code</Button>
-        </a>
-      </div> */}
       <Carousel breakPoints={breakPoints}>
         <ProjectContainer>
           <a
@@ -279,7 +259,6 @@ function Projects() {
           </a>
           <ButtonContainer>
             <a
-              // title="Nextjs Project"
               href="https://naschats.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
@@ -287,7 +266,6 @@ function Projects() {
               <Button>Website</Button>
             </a>
             <a
-              // title="Nextjs Project"
               href="https://github.com/NasserMughrabi/naschats"
               target="_blank"
               rel="noopener noreferrer"
@@ -312,7 +290,6 @@ function Projects() {
           </a>
           <ButtonContainer>
             <a
-              title="Javascript Project"
               href="https://realestate258.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
@@ -320,20 +297,11 @@ function Projects() {
               <Button>Website</Button>
             </a>
             <a
-              title="Javascript Project"
               href="https://github.com/NasserMughrabi/real-estate-api"
               target="_blank"
               rel="noopener noreferrer"
             >
               <Button>Source Code</Button>
-            </a>
-            <a
-              title="Javascript Project"
-              href="https://medium.com/@mughrabi.nasser/java-spring-boot-mysql-react-aws-full-stack-project-from-scratch-to-production-9b703563ec23"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button>Blog</Button>
             </a>
           </ButtonContainer>
           <TagsContainer>
@@ -342,13 +310,14 @@ function Projects() {
             <StyledTag>MySQL</StyledTag>
             <StyledTag>React</StyledTag>
             <StyledTag>Docker</StyledTag>
+            <StyledTag>Docker-Compose</StyledTag>
             <StyledTag>Github Actions</StyledTag>
             <StyledTag>AWS EC2</StyledTag>
           </TagsContainer>
         </ProjectContainer>
         <ProjectContainer>
           <a
-            // title="React Project"
+            title="React Project"
             href="https://sortingalgos-app.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
@@ -357,7 +326,6 @@ function Projects() {
           </a>
           <ButtonContainer>
             <a
-              // title="React Project"
               href="https://sortingalgos-app.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
@@ -365,7 +333,6 @@ function Projects() {
               <Button>Website</Button>
             </a>
             <a
-              title="React Project"
               href="https://github.com/NasserMughrabi/sorting-algos"
               target="_blank"
               rel="noopener noreferrer"
@@ -389,7 +356,6 @@ function Projects() {
           </a>
           <ButtonContainer>
             <a
-              title="React Project"
               href="https://hustlecomp.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
@@ -397,7 +363,7 @@ function Projects() {
               <Button>Website</Button>
             </a>
             <a
-              title="React Project"
+              title="GitHub Repo"
               href="https://github.com/NasserMughrabi/hustle"
               target="_blank"
               rel="noopener noreferrer"
@@ -413,7 +379,7 @@ function Projects() {
         </ProjectContainer>
         <ProjectContainer>
           <a
-            title="Javascript Project"
+            title="JavaScript Project"
             href="https://flip-mem-game.netlify.app/"
             target="_blank"
             rel="noopener noreferrer"
@@ -422,7 +388,6 @@ function Projects() {
           </a>
           <ButtonContainer>
             <a
-              title="Javascript Project"
               href="https://flip-mem-game.netlify.app/"
               target="_blank"
               rel="noopener noreferrer"
@@ -430,7 +395,7 @@ function Projects() {
               <Button>Website</Button>
             </a>
             <a
-              title="Javascript Project"
+              title="GitHub Repo"
               href="https://github.com/NasserMughrabi/flipGame"
               target="_blank"
               rel="noopener noreferrer"
