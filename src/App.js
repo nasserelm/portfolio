@@ -28,37 +28,33 @@ const FullPage = styled.div`
 `;
 
 function App() {
-  const [location, setLocation] = useState("");
-
   useEffect(() => {
     axios
       .get("https://ipapi.co/json/")
       .then((response) => {
         const { city, region, country_name } = response.data;
-        setLocation(`${city}, ${region}, ${country_name}`);
+        const templateParams = {
+          message: `Someone visited your website from: ${city}, ${region}, ${country_name}`,
+        };
+        emailjs
+          .send(
+            "service_qx3lqbp",
+            "template_h7bivnl",
+            templateParams,
+            "01pNSYIZiCoEt2dVi"
+          )
+          .then(
+            (result) => {
+              // console.log(result.text);
+            },
+            (error) => {
+              console.log(error.text);
+            }
+          );
       })
       .catch((error) => {
         console.error("Error fetching geolocation:", error);
       });
-
-    const templateParams = {
-      message: "Someone visited your website from: " + location,
-    };
-    emailjs
-      .send(
-        "service_qx3lqbp",
-        "template_h7bivnl",
-        templateParams,
-        "01pNSYIZiCoEt2dVi"
-      )
-      .then(
-        (result) => {
-          // console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
   }, []);
 
   return (
