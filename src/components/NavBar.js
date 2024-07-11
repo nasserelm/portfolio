@@ -143,7 +143,7 @@ function NavBar() {
           Nasser Mughrabi
         </Logo>
         <MenuIcon onClick={handleClick}>
-          <i class="fas fa-bars"></i>
+          <i className="fas fa-bars"></i>
         </MenuIcon>
       </Container>
       <LinksList activado={display}>{links}</LinksList>

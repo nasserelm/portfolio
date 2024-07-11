@@ -93,7 +93,6 @@ function Home() {
   };
 
   const particlesLoaded = (container) => {
-    console.log(container.canvas.element.style["position"]);
     container.canvas.element.style["position"] = "relative";
   };
   return (

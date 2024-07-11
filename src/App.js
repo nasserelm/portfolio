@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import styled, { createGlobalStyle } from "styled-components/macro";
 import Home from "./components/Home";
 import About from "./components/About";
@@ -6,6 +6,7 @@ import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import NavBar from "./components/NavBar";
 import emailjs from "emailjs-com";
+import axios from "axios";
 
 // Sets up global styling
 const GlobalStyle = createGlobalStyle`
@@ -27,14 +28,21 @@ const FullPage = styled.div`
 `;
 
 function App() {
+  const [location, setLocation] = useState("");
+
   useEffect(() => {
-    console.log(window.location.pathname, window.location.search);
+    axios
+      .get("https://ipapi.co/json/")
+      .then((response) => {
+        const { city, region, country_name } = response.data;
+        setLocation(`${city}, ${region}, ${country_name}`);
+      })
+      .catch((error) => {
+        console.error("Error fetching geolocation:", error);
+      });
 
     const templateParams = {
-      message:
-        "Someone visited your website from: " +
-        window.location.pathname +
-        window.location.search,
+      message: "Someone visited your website from: " + location,
     };
     emailjs
       .send(
@@ -45,7 +53,7 @@ function App() {
       )
       .then(
         (result) => {
-          console.log(result.text);
+          // console.log(result.text);
         },
         (error) => {
           console.log(error.text);
