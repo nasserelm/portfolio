@@ -118,9 +118,11 @@ function About() {
             Nasser Mughrabi
           </ResumeContainer>
         </h2>
-        <h4>
-          Software Engineer at Amotions Inc. with Bachelor's in Computer Science
-          from the University of Utah
+        <p>
+          <br></br>
+          <br></br>
+          Former Software Engineer Intern at Amotions Inc. with Bachelor's in
+          Computer Science from the University of Utah
           <br></br>
           <br></br>A dedicated software engineer who effortlessly navigates the
           ever-changing landscape of technology, fearlessly tackling complex
@@ -128,7 +130,30 @@ function About() {
           to embark on the next exciting challenge.
           <br></br>
           <br></br>
-        </h4>
+          During my internship at Amotions Inc. I worked on Amotions' services
+          utilizing different technologies and programming languages. I
+          collaborated with a team of talented Software Engineers and Designers
+          to build functional and appealing user interfaces utilizing
+          React/Next.js. I also led a team of software engineers to lauched a
+          new trained AI product that resembled a human coach helping clients
+          grow professionaly and improve interactions with thier clients and
+          other employees in the workplace.
+          {/* <br></br>
+          <br></br>
+          Programming Languages: Java, C#, JavaScript, TypeScript, Python
+          <br></br>
+          <br></br>
+          Frontend: HTML/CSS, React, Vue.js, Next.js
+          <br></br>
+          <br></br>
+          Database: SQL, MySQL, MongoDB
+          <br></br>
+          <br></br>
+          Backend: Spring Boot, .NET, Node.js, Flask, REST APIs
+          <br></br>
+          <br></br>
+          Other: Unit Testing, Selenium, AWS, Git, GitHub, GitLab */}
+        </p>
 
         {/* <Button
           href={process.env.PUBLIC_URL + "Nasser_Mughrabi_resume.pdf"}

@@ -111,6 +111,7 @@ function NavBar() {
   }
   // HandleClick for menuItems so when they are click display becomes false
   function handleLinkClick(event) {
+    console.log(event.target);
     setDisplay(false);
   }
   const [display, setDisplay] = useState(false);
@@ -128,7 +129,7 @@ function NavBar() {
         smooth={true}
         offset={-57}
         duration={500}
-        onClick={handleLinkClick}
+        onClick={(e) => handleLinkClick(e)}
       >
         {name}
       </Link>

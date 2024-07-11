@@ -5,10 +5,12 @@ import flipImg from "../img/both-flip.png";
 import hustleImg from "../img/both-hustle.png";
 import sortingImg from "../img/both-sorting.png";
 import naschatsImg from "../img/both-naschats.png";
+import realestateImg from "../img/both-realestate.png";
 import mobileFlipImg from "../img/mobile-flip.png";
 import mobileHustleImg from "../img/mobile-hustle.png";
 import mobileSortingImg from "../img/mobile-sorting.png";
 import mobileNaschatsImg from "../img/mobile-naschats.png";
+import mobileRealestateImg from "../img/mobile-realestate.png";
 import { BsFillArrowDownSquareFill } from "react-icons/bs";
 
 const breakPoints = [{ width: 1, itemsToShow: 1 }];
@@ -144,6 +146,9 @@ const PageWrapper = styled.div`
       cursor: pointer;
     }
   }
+  #realestate {
+    background-image: url(${realestateImg});
+  }
   #flip {
     background-image: url(${flipImg});
   }
@@ -165,6 +170,9 @@ const PageWrapper = styled.div`
     }
     #hustle {
       background-image: url(${mobileHustleImg});
+    }
+    #realestate {
+      background-image: url(${mobileRealestateImg});
     }
   }
 `;
@@ -291,6 +299,51 @@ function Projects() {
             <StyledTag>Next.js/React</StyledTag>
             <StyledTag>Firebase</StyledTag> <StyledTag>LangChain</StyledTag>{" "}
             <StyledTag>GPT API</StyledTag>{" "}
+          </TagsContainer>
+        </ProjectContainer>
+        <ProjectContainer>
+          <a
+            title="Full-Stack Project"
+            href="https://realestate258.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Item id="realestate"></Item>
+          </a>
+          <ButtonContainer>
+            <a
+              title="Javascript Project"
+              href="https://realestate258.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>Website</Button>
+            </a>
+            <a
+              title="Javascript Project"
+              href="https://github.com/NasserMughrabi/real-estate-api"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>Source Code</Button>
+            </a>
+            <a
+              title="Javascript Project"
+              href="https://medium.com/@mughrabi.nasser/java-spring-boot-mysql-react-aws-full-stack-project-from-scratch-to-production-9b703563ec23"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>Blog</Button>
+            </a>
+          </ButtonContainer>
+          <TagsContainer>
+            <StyledTag>Java</StyledTag>
+            <StyledTag>Spring Boot</StyledTag>
+            <StyledTag>MySQL</StyledTag>
+            <StyledTag>React</StyledTag>
+            <StyledTag>Docker</StyledTag>
+            <StyledTag>Github Actions</StyledTag>
+            <StyledTag>AWS EC2</StyledTag>
           </TagsContainer>
         </ProjectContainer>
         <ProjectContainer>
