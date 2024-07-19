@@ -279,6 +279,37 @@ function Projects() {
             <StyledTag>GPT API</StyledTag>{" "}
           </TagsContainer>
         </ProjectContainer>
+
+        <ProjectContainer>
+          <a
+            title="React Project"
+            href="https://sortingalgos-app.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Item id="sorting"></Item>
+          </a>
+          <ButtonContainer>
+            <a
+              href="https://sortingalgos-app.netlify.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>Website</Button>
+            </a>
+            <a
+              href="https://github.com/NasserMughrabi/sorting-algos"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button>Source Code</Button>
+            </a>
+          </ButtonContainer>
+          <TagsContainer>
+            <StyledTag>React</StyledTag>
+            <StyledTag>JavaScript</StyledTag> <StyledTag>CSS/HTML</StyledTag>{" "}
+          </TagsContainer>
+        </ProjectContainer>
         <ProjectContainer>
           <a
             title="Full-Stack Project"
@@ -313,36 +344,6 @@ function Projects() {
             <StyledTag>Docker-Compose</StyledTag>
             <StyledTag>Github Actions</StyledTag>
             <StyledTag>AWS EC2</StyledTag>
-          </TagsContainer>
-        </ProjectContainer>
-        <ProjectContainer>
-          <a
-            title="React Project"
-            href="https://sortingalgos-app.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Item id="sorting"></Item>
-          </a>
-          <ButtonContainer>
-            <a
-              href="https://sortingalgos-app.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button>Website</Button>
-            </a>
-            <a
-              href="https://github.com/NasserMughrabi/sorting-algos"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button>Source Code</Button>
-            </a>
-          </ButtonContainer>
-          <TagsContainer>
-            <StyledTag>React</StyledTag>
-            <StyledTag>JavaScript</StyledTag> <StyledTag>CSS/HTML</StyledTag>{" "}
           </TagsContainer>
         </ProjectContainer>
         <ProjectContainer>
