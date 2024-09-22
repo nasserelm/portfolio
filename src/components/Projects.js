@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components/macro";
 import Carousel from "react-elastic-carousel";
 import flipImg from "../img/both-flip.png";
@@ -6,83 +6,16 @@ import hustleImg from "../img/both-hustle.png";
 import sortingImg from "../img/both-sorting.png";
 import naschatsImg from "../img/both-naschats.png";
 import realestateImg from "../img/both-realestate.png";
+import fileAutoImg from "../img/fileAuto.png";
 import mobileFlipImg from "../img/mobile-flip.png";
 import mobileHustleImg from "../img/mobile-hustle.png";
 import mobileSortingImg from "../img/mobile-sorting.png";
 import mobileNaschatsImg from "../img/mobile-naschats.png";
 import mobileRealestateImg from "../img/mobile-realestate.png";
+import mobileFileAutoImg from "../img/fileAuto.png";
 import { BsFillArrowDownSquareFill } from "react-icons/bs";
 
 const breakPoints = [{ width: 1, itemsToShow: 1 }];
-
-const TickerWrapper = styled.div`
-  /* position: fixed; */
-  bottom: 0;
-  width: 100%;
-  overflow: hidden;
-  height: 4rem;
-  background-color: rgba(#000, 0.9);
-  padding-left: 100%;
-  box-sizing: content-box;
-
-  @-webkit-keyframes ticker {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-      visibility: visible;
-    }
-
-    100% {
-      -webkit-transform: translate3d(-100%, 0, 0);
-      transform: translate3d(-100%, 0, 0);
-    }
-  }
-
-  @keyframes ticker {
-    0% {
-      -webkit-transform: translate3d(0, 0, 0);
-      transform: translate3d(0, 0, 0);
-      visibility: visible;
-    }
-
-    100% {
-      -webkit-transform: translate3d(-100%, 0, 0);
-      transform: translate3d(-100%, 0, 0);
-    }
-  }
-
-  .ticker {
-    display: inline-block;
-    height: 4rem;
-    line-height: 4rem;
-    white-space: nowrap;
-    padding-right: 100%;
-    box-sizing: content-box;
-
-    -webkit-animation-iteration-count: infinite;
-    animation-iteration-count: infinite;
-    -webkit-animation-timing-function: linear;
-    animation-timing-function: linear;
-    -webkit-animation-name: ticker;
-    animation-name: ticker;
-    -webkit-animation-duration: 30s;
-    animation-duration: 30s;
-  }
-
-  .ticker-item {
-    display: inline-block;
-    padding: 0 2rem;
-    font-size: 2rem;
-    color: white;
-  }
-
-  @media (max-width: 760px) {
-    .ticker {
-      -webkit-animation-duration: 20s;
-      animation-duration: 20s;
-    }
-  }
-`;
 
 const Item = styled.div`
   display: flex;
@@ -111,7 +44,8 @@ const Item = styled.div`
 `;
 
 const PageWrapper = styled.div`
-  height: calc(100vh - 3.65rem);
+  position: relative;
+  height: calc(100vh - 2.65rem);
   min-height: calc(100vh - 3.65rem);
   background-color: #1c1c21;
   display: block;
@@ -158,6 +92,9 @@ const PageWrapper = styled.div`
   #hustle {
     background-image: url(${hustleImg});
   }
+  #fileauto {
+    background-image: url(${fileAutoImg});
+  }
   @media (max-width: 760px) {
     #naschats {
       background-image: url(${mobileNaschatsImg});
@@ -173,6 +110,9 @@ const PageWrapper = styled.div`
     }
     #realestate {
       background-image: url(${mobileRealestateImg});
+    }
+    #fileauto {
+      background-image: url(${mobileFileAutoImg});
     }
   }
 `;
@@ -244,172 +184,139 @@ const StyledTag = styled.div`
   }
 `;
 
+const NavButton = styled(Button)`
+  color: ${(props) => (props.isActive ? "white" : "black !important")};
+  background-color: ${(props) => (props.isActive ? "#4a90e2" : "#f0f0f0")};
+  margin: 0;
+  border: 1px solid #4a90e2;
+  border-radius: 0px;
+  &:hover {
+    background-color: #357abd;
+    color: white;
+  }
+`;
+
 function Projects() {
+  const [view, setView] = useState("normal"); // State to manage the view
+
+  const normalProjects = [
+    {
+      id: "naschats",
+      title: "Nextjs Project",
+      link: "https://naschats.netlify.app/",
+      codeLink: "https://github.com/NasserMughrabi/naschats",
+      img: naschatsImg,
+      tags: ["Next.js/React", "Firebase", "LangChain", "GPT API"],
+    },
+    {
+      id: "sorting",
+      title: "React Project",
+      link: "https://sortingalgos-app.netlify.app/",
+      codeLink: "https://github.com/NasserMughrabi/sorting-algos",
+      img: sortingImg,
+      tags: ["React", "JavaScript", "CSS/HTML"],
+    },
+    {
+      id: "realestate",
+      title: "Full-Stack Project",
+      link: "https://realestate258.netlify.app/",
+      codeLink: "https://github.com/NasserMughrabi/real-estate-api",
+      img: realestateImg,
+      tags: [
+        "Java",
+        "Spring Boot",
+        "MySQL",
+        "React",
+        "Docker",
+        "Docker-Compose",
+        "Github Actions",
+        "AWS EC2",
+      ],
+    },
+    {
+      id: "hustle",
+      title: "Hustle Project",
+      link: "https://hustle-project.netlify.app/",
+      codeLink: "https://github.com/NasserMughrabi/hustle-project",
+      img: hustleImg,
+      tags: ["JavaScript", "Node.js", "Express"],
+    },
+    {
+      id: "flip",
+      title: "Flip Project",
+      link: "https://flip-project.netlify.app/",
+      codeLink: "https://github.com/NasserMughrabi/flip-project",
+      img: flipImg,
+      tags: ["JavaScript", "HTML/CSS", "Web Design"],
+    },
+  ];
+
+  const cloudProjects = [
+    {
+      id: "fileauto",
+      title: "AWS Cloud-Based Project",
+      link: "https://awsfileauto.netlify.app/",
+      codeLink: "https://github.com/NasserMughrabi/aws-file-auto",
+      img: fileAutoImg,
+      tags: ["React", "API Gateway", "Lambda", "DynamoDB", "EC2", "S3"],
+    },
+    // Add more cloud projects here
+  ];
+
+  const renderProjects = (projects) =>
+    projects.map((project, index) => (
+      <ProjectContainer key={index}>
+        <a
+          title={project.title}
+          href={project.link}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <Item
+            id={project.id}
+            style={{ backgroundImage: `url(${project.img})` }}
+          ></Item>
+        </a>
+        <ButtonContainer>
+          <a href={project.link} target="_blank" rel="noopener noreferrer">
+            <Button>Website</Button>
+          </a>
+          <a href={project.codeLink} target="_blank" rel="noopener noreferrer">
+            <Button>Source Code</Button>
+          </a>
+        </ButtonContainer>
+        <TagsContainer>
+          {project.tags.map((tag, i) => (
+            <StyledTag key={i}>{tag}</StyledTag>
+          ))}
+        </TagsContainer>
+      </ProjectContainer>
+    ));
+
   return (
     <PageWrapper id="projects">
+      <div
+        style={{
+          position: "absolute",
+          top: "4%",
+          left: "35%",
+          zIndex: "99",
+        }}
+      >
+        <NavButton
+          isActive={view === "normal"}
+          onClick={() => setView("normal")}
+        >
+          Development Projects
+        </NavButton>
+        <NavButton isActive={view === "cloud"} onClick={() => setView("cloud")}>
+          Cloud Projects
+        </NavButton>
+      </div>
       <Carousel breakPoints={breakPoints}>
-        <ProjectContainer>
-          <a
-            title="Nextjs Project"
-            href="https://naschats.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Item id="naschats"></Item>
-          </a>
-          <ButtonContainer>
-            <a
-              href="https://naschats.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button>Website</Button>
-            </a>
-            <a
-              href="https://github.com/NasserMughrabi/naschats"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button>Source Code</Button>
-            </a>
-          </ButtonContainer>
-          <TagsContainer>
-            <StyledTag>Next.js/React</StyledTag>
-            <StyledTag>Firebase</StyledTag> <StyledTag>LangChain</StyledTag>{" "}
-            <StyledTag>GPT API</StyledTag>{" "}
-          </TagsContainer>
-        </ProjectContainer>
-
-        <ProjectContainer>
-          <a
-            title="React Project"
-            href="https://sortingalgos-app.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Item id="sorting"></Item>
-          </a>
-          <ButtonContainer>
-            <a
-              href="https://sortingalgos-app.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button>Website</Button>
-            </a>
-            <a
-              href="https://github.com/NasserMughrabi/sorting-algos"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button>Source Code</Button>
-            </a>
-          </ButtonContainer>
-          <TagsContainer>
-            <StyledTag>React</StyledTag>
-            <StyledTag>JavaScript</StyledTag> <StyledTag>CSS/HTML</StyledTag>{" "}
-          </TagsContainer>
-        </ProjectContainer>
-        <ProjectContainer>
-          <a
-            title="Full-Stack Project"
-            href="https://realestate258.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Item id="realestate"></Item>
-          </a>
-          <ButtonContainer>
-            <a
-              href="https://realestate258.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button>Website</Button>
-            </a>
-            <a
-              href="https://github.com/NasserMughrabi/real-estate-api"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button>Source Code</Button>
-            </a>
-          </ButtonContainer>
-          <TagsContainer>
-            <StyledTag>Java</StyledTag>
-            <StyledTag>Spring Boot</StyledTag>
-            <StyledTag>MySQL</StyledTag>
-            <StyledTag>React</StyledTag>
-            <StyledTag>Docker</StyledTag>
-            <StyledTag>Docker-Compose</StyledTag>
-            <StyledTag>Github Actions</StyledTag>
-            <StyledTag>AWS EC2</StyledTag>
-          </TagsContainer>
-        </ProjectContainer>
-        <ProjectContainer>
-          <a
-            title="React Project"
-            href="https://hustlecomp.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Item id="hustle"></Item>
-          </a>
-          <ButtonContainer>
-            <a
-              href="https://hustlecomp.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button>Website</Button>
-            </a>
-            <a
-              title="GitHub Repo"
-              href="https://github.com/NasserMughrabi/hustle"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button>Source Code</Button>
-            </a>
-          </ButtonContainer>
-          <TagsContainer>
-            <StyledTag>React</StyledTag>
-            <StyledTag>JavaScript</StyledTag>
-            <StyledTag>CSS/HTML</StyledTag>{" "}
-          </TagsContainer>
-        </ProjectContainer>
-        <ProjectContainer>
-          <a
-            title="JavaScript Project"
-            href="https://flip-mem-game.netlify.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Item id="flip"></Item>
-          </a>
-          <ButtonContainer>
-            <a
-              href="https://flip-mem-game.netlify.app/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button>Website</Button>
-            </a>
-            <a
-              title="GitHub Repo"
-              href="https://github.com/NasserMughrabi/flipGame"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Button>Source Code</Button>
-            </a>
-          </ButtonContainer>
-          <TagsContainer>
-            <StyledTag>JavaScript</StyledTag>
-            <StyledTag>CSS</StyledTag>
-            <StyledTag>HTML</StyledTag>{" "}
-          </TagsContainer>
-        </ProjectContainer>
+        {view === "normal"
+          ? renderProjects(normalProjects)
+          : renderProjects(cloudProjects)}
       </Carousel>
     </PageWrapper>
   );

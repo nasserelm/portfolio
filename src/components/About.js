@@ -112,28 +112,24 @@ function About() {
             Nasser Mughrabi
           </ResumeContainer>
         </h2>
+        <p style={{fontWeight: "bold"}}>Software Developer at TELLUS Networked Sensor Solutions, Inc.</p>
         <p>
-          I am a part-time Software Engineer at Amotions Inc., a startup in
-          California focused on enhancing professional growth and interpersonal
-          interactions. Additionally, I provide freelance software development
-          services to various businesses across Utah and the United States.
+          I hold a Bachelor's degree in Computer Science from the University of
+          Utah and an Associate of Science from Snow College.
         </p>
         <p>
-          I hold a Bachelor's in Computer Science from the University of Utah
-          and an Associate of Science from Snow College.
+          As a passionate Software Engineer, I thrive in navigating the dynamic
+          tech landscape, tackling complex challenges, and collaborating with
+          diverse teams. I’m always excited to embrace the next opportunity for
+          innovation and growth.
         </p>
         <p>
-          As a dedicated Software Engineer, I navigate the ever-evolving tech
-          landscape, solving complex problems and collaborating with diverse
-          teams. Always ready for the next exciting challenge.
-        </p>
-        <p>
-          At Amotions Inc., I work on a variety of services using different
-          technologies and programming languages. I collaborate with talented
-          Software Engineers and Designers to create functional and appealing
-          user interfaces using React/Next.js. I also led a team to launch a new
-          AI product that acts as a human coach, helping clients grow
-          professionally and improve their workplace interactions.
+          At TELLUS, I focus on building and maintaining scalable microservices
+          using technologies like Python, FastAPI, PostgreSQL, MongoDB, and
+          CloudFunctions/Lambdas. My work enhances air quality monitoring
+          systems, helping to deliver impactful environmental solutions. I
+          collaborate closely with cross-functional teams to ensure product
+          alignment with business goals and customer needs.
         </p>
       </Description>
     </PageWrapper>
