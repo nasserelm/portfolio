@@ -249,6 +249,14 @@ function Projects() {
       img: flipImg,
       tags: ["JavaScript", "HTML/CSS", "Web Design"],
     },
+    {
+      id: "fileauto",
+      title: "AWS Cloud-Based Project",
+      link: "https://awsfileauto.netlify.app/",
+      codeLink: "https://github.com/NasserMughrabi/aws-file-auto",
+      img: fileAutoImg,
+      tags: ["React", "API Gateway", "Lambda", "DynamoDB", "EC2", "S3"],
+    },
   ];
 
   const cloudProjects = [
@@ -295,7 +303,7 @@ function Projects() {
 
   return (
     <PageWrapper id="projects">
-      <div
+      {/* <div
         style={{
           position: "absolute",
           top: "4%",
@@ -312,11 +320,9 @@ function Projects() {
         <NavButton isActive={view === "cloud"} onClick={() => setView("cloud")}>
           Cloud Projects
         </NavButton>
-      </div>
+      </div> */}
       <Carousel breakPoints={breakPoints}>
-        {view === "normal"
-          ? renderProjects(normalProjects)
-          : renderProjects(cloudProjects)}
+        {renderProjects(normalProjects)}
       </Carousel>
     </PageWrapper>
   );
