@@ -28,34 +28,34 @@ const FullPage = styled.div`
 `;
 
 function App() {
-  // useEffect(() => {
-  //   axios
-  //     .get("https://ipapi.co/json/")
-  //     .then((response) => {
-  //       const { city, region, country_name } = response.data;
-  //       const templateParams = {
-  //         message: `Someone visited your website from: ${city}, ${region}, ${country_name}`,
-  //       };
-  //       emailjs
-  //         .send(
-  //           "service_qx3lqbp",
-  //           "template_h7bivnl",
-  //           templateParams,
-  //           "01pNSYIZiCoEt2dVi"
-  //         )
-  //         .then(
-  //           (result) => {
-  //             // console.log(result.text);
-  //           },
-  //           (error) => {
-  //             console.log(error.text);
-  //           }
-  //         );
-  //     })
-  //     .catch((error) => {
-  //       console.error("Error fetching geolocation:", error);
-  //     });
-  // }, []);
+  useEffect(() => {
+    axios
+      .get("https://ipapi.co/json/")
+      .then((response) => {
+        const { city, region, country_name } = response.data;
+        const templateParams = {
+          message: `Someone visited your website from: ${city}, ${region}, ${country_name}`,
+        };
+        emailjs
+          .send(
+            "service_qx3lqbp",
+            "template_h7bivnl",
+            templateParams,
+            "01pNSYIZiCoEt2dVi"
+          )
+          .then(
+            (result) => {
+              // console.log(result.text);
+            },
+            (error) => {
+              console.log(error.text);
+            }
+          );
+      })
+      .catch((error) => {
+        console.error("Error fetching geolocation:", error);
+      });
+  }, []);
 
   return (
     <React.Fragment>
