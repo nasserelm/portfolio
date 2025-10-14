@@ -112,24 +112,36 @@ function About() {
             Nasser Mughrabi
           </ResumeContainer>
         </h2>
-        <p style={{fontWeight: "bold"}}>Software Developer at TELLUS Networked Sensor Solutions, Inc.</p>
-        <p>
-          I hold a Bachelor's degree in Computer Science from the University of
-          Utah and an Associate of Science from Snow College.
+        <p style={{ fontWeight: "bold" }}>
+          Software Engineer at TELLUS Networked Sensor Solutions, Inc.
         </p>
         <p>
-          As a passionate Software Engineer, I thrive in navigating the dynamic
-          tech landscape, tackling complex challenges, and collaborating with
-          diverse teams. I’m always excited to embrace the next opportunity for
-          innovation and growth.
+          Software Engineer with 2+ years of expertise in
+          architecting and optimizing scalable APIs, microservices, and data
+          pipelines using Python, FastAPI, and SQL technologies.
         </p>
         <p>
-          At TELLUS, I focus on building and maintaining scalable microservices
-          using technologies like Python, FastAPI, PostgreSQL, MongoDB, and
-          CloudFunctions/Lambdas. My work enhances air quality monitoring
-          systems, helping to deliver impactful environmental solutions. I
-          collaborate closely with cross-functional teams to ensure product
-          alignment with business goals and customer needs.
+          Demonstrated success in reducing system latency across multiple
+          microservices through strategic caching implementations and optimized
+          system architecture for 1M+ requests per month. Proven track record of end-to-end product
+          development and successful launches.
+        </p>
+        <p>
+          Proficient in distributed systems, cloud infrastructure (AWS/GCP), and
+          data-driven feature development.
+          <br />
+          Technical expertise spans Python (FastAPI), Java (Spring Boot),
+          TypeScript (React/Next.js), PostgreSQL, Redis, AWS, GCP, Docker, and
+          CI/CD pipelines, complemented by strong foundations in algorithms,
+          data structures, and system design principles.
+        </p>
+        <p>
+          Passionate about building low-latency, highly available distributed
+          systems that serve millions of users.
+          <br />
+          Thrives on solving complex engineering challenges, architecting
+          scalable solutions, and fostering cross-team collaboration to deliver
+          high-impact results.
         </p>
       </Description>
     </PageWrapper>

@@ -173,7 +173,7 @@ function Home() {
       />
       <article>
         <h1>NASSER MUGHRABI</h1>
-        <h2>Full-Stack Software Developer</h2>
+        <h2>Software Engineer</h2>
       </article>
     </PageWrapper>
   );
