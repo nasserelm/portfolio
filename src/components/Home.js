@@ -172,7 +172,7 @@ function Home() {
         }}
       />
       <article>
-        <h1>NASSER MUGHRABI</h1>
+        <h1>NASSER ELMUGHRABI</h1>
         <h2>Software Engineer</h2>
       </article>
     </PageWrapper>

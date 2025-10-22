@@ -104,13 +104,7 @@ function About() {
       <ImageContainer />
       <Description>
         <h2>
-          <ResumeContainer
-            title="My Resume"
-            // href={process.env.PUBLIC_URL + "Nasser_Mughrabi_Resume.pdf"}
-            target="_blank"
-          >
-            Nasser Mughrabi
-          </ResumeContainer>
+            Nasser Elmughrabi
         </h2>
         <p style={{ fontWeight: "bold" }}>
           Software Engineer at TELLUS Networked Sensor Solutions, Inc.

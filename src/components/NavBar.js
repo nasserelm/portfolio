@@ -140,7 +140,7 @@ function NavBar() {
     <NavBarItems>
       <Container>
         <Logo>
-          Nasser Mughrabi
+          Nasser Elmughrabi
         </Logo>
         <MenuIcon onClick={handleClick}>
           <i className="fas fa-bars"></i>

@@ -143,7 +143,7 @@ function Contact() {
     let name = document.getElementById('Name').value;
     let message = document.getElementById('Message').value;
     // open email client app or redirect to email browser
-    window.open(`mailto:mughrabi.nasser@gmail.com?subject=Portfolio Email from ${name}&body=${message}`);
+    window.open(`mailto:nasser.elmughrabi@gmail.com?subject=Portfolio Email from ${name}&body=${message}`);
   }
 
   return (
@@ -158,12 +158,12 @@ function Contact() {
         <button type='button' onClick={handleClick}>Submit</button>
       </FormContainer>
       <IconContainer>
-        <a href="https://www.nassermughrabi.com" target="_blank" rel="noopener noreferrer" onClick={handleClick}><AiOutlineMail /></a>
-        <a href="https://www.instagram.com/nasser_mughrabi/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+        <a href="https://www.nasserelmughrabi.com" target="_blank" rel="noopener noreferrer" onClick={handleClick}><AiOutlineMail /></a>
+        <a href="https://www.instagram.com/nasser_2588/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
         <a href="https://www.linkedin.com/in/nasser258/" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
-        <a href="https://github.com/NasserMughrabi/" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
+        <a href="https://github.com/nasserelm/" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
       </IconContainer>
-      <Copyright>Nasser Mughrabi <i className="fa fa-copyright"></i> 2024</Copyright>
+      <Copyright>Nasser Elmughrabi <i className="fa fa-copyright"></i> 2025</Copyright>
     </PageWrapper>
   );
 }

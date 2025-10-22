@@ -205,7 +205,7 @@ function Projects() {
       id: "naschats",
       title: "Nextjs Project",
       link: "https://naschats.netlify.app/",
-      codeLink: "https://github.com/NasserMughrabi/naschats",
+      codeLink: "https://github.com/nasserelm/naschats",
       img: naschatsImg,
       tags: ["Next.js/React", "Firebase", "LangChain", "GPT API"],
     },
@@ -213,7 +213,7 @@ function Projects() {
       id: "sorting",
       title: "React Project",
       link: "https://sortingalgos-app.netlify.app/",
-      codeLink: "https://github.com/NasserMughrabi/sorting-algos",
+      codeLink: "https://github.com/nasserelm/sorting-algos",
       img: sortingImg,
       tags: ["React", "JavaScript", "CSS/HTML"],
     },
@@ -221,7 +221,7 @@ function Projects() {
       id: "realestate",
       title: "Full-Stack Project",
       link: "https://realestate258.netlify.app/",
-      codeLink: "https://github.com/NasserMughrabi/real-estate-api",
+      codeLink: "https://github.com/nasserelm/real-estate-api",
       img: realestateImg,
       tags: [
         "Java",
@@ -238,7 +238,7 @@ function Projects() {
       id: "hustle",
       title: "Hustle Project",
       link: "https://hustle-project.netlify.app/",
-      codeLink: "https://github.com/NasserMughrabi/hustle-project",
+      codeLink: "https://github.com/nasserelm/hustle-project",
       img: hustleImg,
       tags: ["JavaScript", "Node.js", "Express"],
     },
@@ -246,7 +246,7 @@ function Projects() {
       id: "flip",
       title: "Flip Project",
       link: "https://flip-project.netlify.app/",
-      codeLink: "https://github.com/NasserMughrabi/flip-project",
+      codeLink: "https://github.com/nasserelm/flip-project",
       img: flipImg,
       tags: ["JavaScript", "HTML/CSS", "Web Design"],
     },
@@ -257,7 +257,7 @@ function Projects() {
       id: "fileauto",
       title: "AWS Cloud-Based Project",
       link: "https://awsfileauto.netlify.app/",
-      codeLink: "https://github.com/NasserMughrabi/aws-file-auto",
+      codeLink: "https://github.com/nasserelm/aws-file-auto",
       img: fileAutoImg,
       tags: ["React", "API Gateway", "Lambda", "DynamoDB", "EC2", "S3"],
     },
@@ -285,7 +285,7 @@ function Projects() {
               <Button>Website</Button>
             </a>
             <a
-              href="https://github.com/NasserMughrabi/naschats"
+              href="https://github.com/nasserelm/naschats"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -317,7 +317,7 @@ function Projects() {
               <Button>Website</Button>
             </a>
             <a
-              href="https://github.com/NasserMughrabi/sorting-algos"
+              href="https://github.com/nasserelm/sorting-algos"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -347,7 +347,7 @@ function Projects() {
               <Button>Website</Button>
             </a>
             <a
-              href="https://github.com/NasserMughrabi/real-estate-api"
+              href="https://github.com/nasserelm/real-estate-api"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -384,7 +384,7 @@ function Projects() {
             </a>
             <a
               title="GitHub Repo"
-              href="https://github.com/NasserMughrabi/hustle"
+              href="https://github.com/nasserelm/hustle"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -416,7 +416,7 @@ function Projects() {
             </a>
             <a
               title="GitHub Repo"
-              href="https://github.com/NasserMughrabi/flipGame"
+              href="https://github.com/nasserelm/flipGame"
               target="_blank"
               rel="noopener noreferrer"
             >
